@@ -2,96 +2,61 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Amr Morsy
     - name: Date of Birth
-      value: 14th March 1879
+      value: 17th July 2000
     - name: Languages
-      value: English, German
+      value: English, Arabic, French
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Bsc Computer Science
+      institution: Concordia University, Montréal, Canada
+      year: 2022 - 2023
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+    - title: Erasmus Exchange Program
+      institution: University of Bergen, Bergen, Norway
+      year: 2021 - 2022
+    - title: Bsc Computer Science
+      institution: The American University in Cairo, Cairo, Egypt
+      year: 2018 - 2021
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Teaching Assistant | COMP 371 - Computer Graphics
+      institution: Concordia University, Montréal, Canada
+      year: 2022 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
+        - Led weekly lab sessions, emphasizing clarity in instructing complex computer graphics topics to a diverse student body
+        - Assisted students individually, facilitating comprehension and application of concepts in their projects and assignments
+        - Employed a deep understanding of computer graphics to enhance and support students educational journeys
+        
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: <a href="https://github.com/amrhmorsy/ocean-simulation">Ocean Simulation</a>
+      year:
+      description: Ocean simulation, developed in C++ and OpenGL, that uses the Fast Fourier Transform method (FFT) with the assistance of OpenCL to simulate waves. Additionally, it employs Physically-Based Rendering (PBR) and image-based lighting (IBL) techniques to enhance the realism of the oceanic visuals, and an HDR skybox to present dynamic and an immersive sky
+      
+    - title: <a href="https://github.com/amrhmorsy/cloth-simulation">Cloth Simulation</a>
+      year:
+      description: Cloth simulation, developed in C++ and OpenGL, that employs a Mass-Spring System for realistic cloth, inspired by the paper "Fast Simulation of Mass-Spring Systems" by Liu et al. It uses OpenMP for efficient parallelization and features Physically-Based Rendering (PBR) and Image-Based Lighting (IBL) to enhance the visuals of the simulated cloth
+      
+    - title: <a href="https://github.com/amrhmorsy/raytracer">Raytracer</a>
+      year:
+      description: Advanced Raytracer application, developed in C++, that utilizes OpenMP for parallel computing to enhance performance. The project features global illumination, motion blur, depth of field, soft shadows and Phong Local Illumination
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+    - year: 2020
       items:
-        - Description 1.
-        - Description 2.
+        - Africa & Arab Collegiate Competitive Programming Championship | Cairo, Egypt | Team Rank 11
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Chess, Gym, Reading and Walking

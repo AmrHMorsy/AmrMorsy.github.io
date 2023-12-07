@@ -1,9 +1,9 @@
 ---
 layout: page
-title: project 3
-description: a project that redirects to another website
+title: Raytracer
+description: Advanced Raytracer application, developed in C++, that utilizes OpenMP for parallel computing to enhance performance. The project features global illumination, motion blur, depth of field, soft shadows and Phong Local Illumination
 img: assets/img/7.jpg
-redirect: https://unsplash.com
+redirect: https://github.com/AmrHMorsy/Raytracer
 importance: 3
 category: work
 ---

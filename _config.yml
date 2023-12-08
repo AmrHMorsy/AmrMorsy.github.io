@@ -123,7 +123,7 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 
 blog_name: Rendered Reflections # blog_name will be displayed in your blog page
 blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
-blog_description:
+blog_description: Welcome to "Rendered Reflections" – a unique fusion of art, technology, and storytelling within the realms of computer graphics, animation, and game development. This blog transcends traditional tutorials, offering a deeper dive into the creative process and the philosophical narratives behind each project. Here, you'll find a blend of technical insights and artistic exploration, as I share my personal journey creating games and animations that are not just visually striking, but also rich in meaning and moral complexity. Join me as I unravel the layers of digital artistry, from the initial concept to the final render, and discover the profound stories that lie within pixels and code.
 permalink: /blog/:year/:title/
 
 # Pagination

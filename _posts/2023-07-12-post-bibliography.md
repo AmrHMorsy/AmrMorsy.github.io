@@ -64,7 +64,12 @@ Using this triangulation pattern, we can form the indices data that instructs Op
 {% include figure.html path="assets/img/8.jpg" class="img-fluid rounded z-depth-1" %}
 <br>
 
-Next, we need to calculate the normal of each vertex. The normal data is one of the most important data needed to perform shading and lighting calculations. The calculation of the normal vector is simple: The normal vector is the perpendicular vector to the surface of the sphere at a given vertex. For a sphere centered at a point $C = (C_x, C_y, C_z)$ and a vertex $V = (x,y,z)$, the normal vector $N$ is the normalized vector pointing from the center $C$ to the vertex $V$. Mathematically, this is expressed as: 
+Next, we need to calculate the normal of each vertex. The normal data is one of the most important data needed to perform shading and lighting calculations. The calculation of the normal vector is simple: The normal vector is the perpendicular vector to the surface of the sphere at a given vertex. 
+<br><br>
+{% include figure.html path="assets/img/11.jpg" class="img-fluid rounded z-depth-1" %}
+<br>
+
+For a sphere centered at a point C and a vertex V, the normal vector N is the normalized vector pointing from the center C to the vertex V. Mathematically, this is expressed as: 
 
 $$N = normalize(V - C)$$
 

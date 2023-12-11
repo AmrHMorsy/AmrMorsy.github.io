@@ -55,7 +55,7 @@ Using the sector angle s and the stack angle t, we can calculate the vertex v us
 <div align="center"><b>$$ V.z = r * sin(t) $$</b></div>
 <br>
 
-Now that we have the vertices data, the only thing remaining is to triangulate adjacent vertices to form triangles. 
+Now that we have the vertices data, the next task is to triangulate adjacent vertices to form triangles. 
 
 As shown below, each sector in a stack will consists of two triangles: ( V1 - V2 - V1+1 ) and ( V1+1 - V2 - V2+1 ). The only exceptions are the top (first) and the bottom (last) stacks: They will consist of only one triangle. 
 
@@ -63,6 +63,12 @@ Using this triangulation pattern, we can form the indices data that instructs Op
 <br><br>
 {% include figure.html path="assets/img/8.jpg" class="img-fluid rounded z-depth-1" %}
 <br>
+
+Next, we need to calculate the normal of each vertex. The normal data is one of the most important data needed to perform shading and lighting calculations. The calculation of the normal vector is simple: The normal vector is the perpendicular vector to the surface of the sphere at a given vertex. For a sphere centered at a point $C = (C_x, C_y, C_z)$ and a vertex $V = (x,y,z)$, the normal vector $N$ is the normalized vector pointing from the center $C$ to the vertex $V$. Mathematically, this is expressed as: 
+
+$$N = normalize(V - C)$$
+
+Normalizing the vector ensures that its length is one, a crucial aspect for accurate lighting and shading effects in OpenGL rendering. 
 
 <hr>
 <br>

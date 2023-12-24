@@ -77,25 +77,33 @@ Normalizing the vector ensures that its length is one, a crucial aspect for accu
 
 <hr>
 <br>
-The following is a C++ function that generates the vertices of the sphere. <br><br>
+The following is a C++ function that generates the vertices and the normals of the sphere. <br><br>
 
 
 ```c++
-std::vector<float> generate_sphere_vertices( float radius, int number_of_sectors, int number_of_stacks )
+std::vector<float> generate_sphere_data( float radius, int number_of_sectors, int number_of_stacks )
 {
+    std::vector<float> data ;
     for( int i = 0 ; i <= number_of_stacks ; i++ ){
-        float t = M_PI / 2 - i * (M_PI / number_of_stacks) ;
+        float t = M_PI / 2 - static_cast<float>(i) * (M_PI / number_of_stacks) ;
         float z = radius * sinf(t) ;
+        float v = (t + (M_PI / 2)) / M_PI ;
+        v = std::max(0.0f, std::min(v, 1.0f));
         for(int j = 0; j <= number_of_sectors ; ++j) {
-            float s = j * (2 * M_PI / number_of_sectors) ;
+            float s = static_cast<float>(j) * (2 * M_PI / number_of_sectors) ;
             float x = radius * cosf(t) * cosf(s) ;
             float y = radius * cosf(t) * sinf(s) ;
-            vertices.push_back(x) ;
-            vertices.push_back(y) ;
-            vertices.push_back(z) ;
+            float u = s / (2*M_PI) ;
+            u = std::max(0.0f, std::min(u, 1.0f));
+            data.push_back(x) ;
+            data.push_back(y) ;
+            data.push_back(z) ;
+            data.push_back(x/sqrt((x*x)+(y*y)+(z*z))) ;
+            data.push_back(y/sqrt((x*x)+(y*y)+(z*z))) ;
+            data.push_back(z/sqrt((x*x)+(y*y)+(z*z))) ;
         }
     }
-    return vertices ;
+    return data ;
 }
 ```
 <br>
@@ -130,7 +138,7 @@ std::vector<unsigned int> generate_sphere_indices( int number_of_sectors, int nu
 
 <br>
 
-The following is the complete implementation to render a rotating sphere using C++ and OpenGL. <br><br>
+The following is the complete implementation to render a shaded sphere using C++ and OpenGL. <br><br>
 
 ```c++
 #include <GL/glew.h>
@@ -143,26 +151,48 @@ The following is the complete implementation to render a rotating sphere using C
 #include <glm/gtc/type_ptr.hpp>
 
 
+
+
 const char * get_vertex_shader_source()
 {
     return
+    
     "#version 330 core \n"
     "in vec3 position; \n"
+    "in vec3 _normal ; \n"
+    "out vec3 normal ; \n"
+    "out vec3 fragment_position ; \n"
+    "out vec3 view_position ; \n"
     "uniform mat4 model ; \n"
     "uniform mat4 view ; \n"
     "uniform mat4 projection ; \n"
     "void main() { \n"
     "    gl_Position = projection * view * model * vec4(position, 1.0); \n"
+    "    normal = mat3(transpose(inverse(model))) * _normal ; \n"
+    "    fragment_position = vec3(model * vec4(position, 1.0)) ; \n"
+    "    view_position = vec3(view * model * vec4(position, 1.0)) ; \n"
     "} \n" ;
 }
 
 const char * get_fragment_shader_source()
 {
     return
+    
     "#version 330 core \n"
-    "out vec4 outColor; \n"
+    "in vec3 normal ; \n"
+    "in vec3 fragment_position ; \n"
+    "in vec3 view_position ; \n"
+    "out vec4 output_color ; \n"
+    "uniform vec3 light_position ; \n"
     "void main() { \n"
-    "    outColor = vec4(1.0, 0.0, 0.0, 1.0); \n"
+    "    vec3 light_color = vec3(0.9, 0.3, 0.2); \n"
+    "    vec3 light_direction = normalize(light_position - fragment_position); \n"
+    "    vec3 diffuse_color = max(dot(normal, light_direction), 0.0) * light_color ; \n"
+    "    vec3 view_direction = normalize(view_position - fragment_position) ; \n"
+    "    vec3 reflected_direction = reflect(-light_direction, normal) ; \n"
+    "    vec3 specular_color = 0.8 * pow(max(dot(view_direction, reflected_direction), 0.0), 32) * light_color; \n"
+    "    vec3 color = diffuse_color + specular_color ; \n"
+    "    output_color = vec4(color, 1.0) ; \n"
     "} \n" ;
 }
 
@@ -190,22 +220,29 @@ std::vector<unsigned int> generate_sphere_indices( int number_of_sectors, int nu
     return indices;
 }
 
-std::vector<float> generate_sphere_vertices( float radius, int number_of_sectors, int number_of_stacks )
+std::vector<float> generate_sphere_data( float radius, int number_of_sectors, int number_of_stacks )
 {
-    std::vector<float> vertices ;
+    std::vector<float> data ;
     for( int i = 0 ; i <= number_of_stacks ; i++ ){
-        float t = M_PI / 2 - i * (M_PI / number_of_stacks) ;
+        float t = M_PI / 2 - static_cast<float>(i) * (M_PI / number_of_stacks) ;
         float z = radius * sinf(t) ;
+        float v = (t + (M_PI / 2)) / M_PI ;
+        v = std::max(0.0f, std::min(v, 1.0f));
         for(int j = 0; j <= number_of_sectors ; ++j) {
-            float s = j * (2 * M_PI / number_of_sectors) ;
+            float s = static_cast<float>(j) * (2 * M_PI / number_of_sectors) ;
             float x = radius * cosf(t) * cosf(s) ;
             float y = radius * cosf(t) * sinf(s) ;
-            vertices.push_back(x) ;
-            vertices.push_back(y) ;
-            vertices.push_back(z) ;
+            float u = s / (2*M_PI) ;
+            u = std::max(0.0f, std::min(u, 1.0f));
+            data.push_back(x) ;
+            data.push_back(y) ;
+            data.push_back(z) ;
+            data.push_back(x/sqrt((x*x)+(y*y)+(z*z))) ;
+            data.push_back(y/sqrt((x*x)+(y*y)+(z*z))) ;
+            data.push_back(z/sqrt((x*x)+(y*y)+(z*z))) ;
         }
     }
-    return vertices ;
+    return data ;
 }
 
 int main()
@@ -271,7 +308,7 @@ int main()
     GLuint shaderProgram = glCreateProgram();
     glAttachShader(shaderProgram, vertexShader);
     glAttachShader(shaderProgram, fragmentShader);
-    glBindFragDataLocation(shaderProgram, 0, "outColor");
+    glBindFragDataLocation(shaderProgram, 0, "output_color");
     glLinkProgram(shaderProgram);
     glUseProgram(shaderProgram) ;
 
@@ -286,11 +323,22 @@ int main()
     glm::mat4 projection = glm::perspective(glm::radians(45.0f), 800.0f / 600.0f, 0.1f, 100.0f) ;
 
     // Define View Matrix
-    glm::mat4 view = glm::lookAt( glm::vec3(4,3,3), glm::vec3(0,0,0), glm::vec3(0,1,0) ) ;
+    glm::vec3 camera_position( 0.0f ,0.0f ,-5.0f ) ;
+    glm::vec3 target( 0.0f ,0.0f ,0.0f ) ;
+    glm::vec3 up( 0.0f, 1.0f, 0.0f ) ;
+    glm::mat4 view = glm::lookAt( camera_position, target, up ) ;
 
-    // Upload View and Projection Matrix
+    // Define Model Matrix
+    glm::mat4 model = glm::mat4(1.0f) ;
+
+    // Upload Model, View and Projection Matrix
     glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "projection"), 1, GL_FALSE, &projection[0][0]) ;
     glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "view"), 1, GL_FALSE, &view[0][0]) ;
+    glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model)) ;
+
+    glm::vec3 light_position = glm::vec3(-4.0f, 5.0f, -5.0f) ;
+    // Upload Light Position
+    glUniform3fv(glGetUniformLocation(shaderProgram, "light_position"), 1, &light_position[0]) ;
 
     // Create VAO
     GLuint vao;
@@ -298,41 +346,41 @@ int main()
     glBindVertexArray(vao);
 
     // Create VBO and EBO
-    GLuint vbo, ebo;
+    GLuint vbo, ebo ;
     glGenBuffers(1, &vbo);
     glGenBuffers(1, &ebo);
 
-    // Generate Sphere Vertices
-    std::vector<float> vertices = generate_sphere_vertices(1.0f, 36, 18);
-
+    // Set Sphere Radius
+    float radius = 1.0f ;
+    
+    // Set Number of Sectors and Stacks
+    int sectors = 36 ;
+    int stacks = 18 ;
+    
+    // Generate Sphere Data
+    std::vector<float> data = generate_sphere_data(radius, sectors, stacks) ;
+    
     // Generate Sphere Indices
-    std::vector<unsigned int> indices = generate_sphere_indices(36, 18);
+    std::vector<unsigned int> indices = generate_sphere_indices(sectors, stacks) ;
 
-    // Store Vertex Data in VBO
-    glBindBuffer(GL_ARRAY_BUFFER, vbo);
-    glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(float), vertices.data(), GL_STATIC_DRAW);
+    // Store Data in VBO
+    glBindBuffer(GL_ARRAY_BUFFER, vbo) ;
+    glBufferData(GL_ARRAY_BUFFER, data.size()*sizeof(float), data.data(),GL_STATIC_DRAW) ;
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, (6*sizeof(float)), (void*)0) ;
+    glEnableVertexAttribArray(0) ;
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, (6*sizeof(float)), (void*)(3 * sizeof(float)));
+    glEnableVertexAttribArray(1);
 
     // Store Indices Data in EBO
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(unsigned int), indices.data(), GL_STATIC_DRAW);
 
-    // Specify the layout of the vertex data
-    GLint posAttrib = glGetAttribLocation(shaderProgram, "position");
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
-    glEnableVertexAttribArray(0) ;
-
     // Main Game Loop
     while (!glfwWindowShouldClose(window))
     {
         // Clear the screen to black
-        glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+        glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
-
-        // Set Model Matrix
-        float timeValue = glfwGetTime() ;
-        float angle = timeValue * glm::radians(50.0f) ;
-        glm::mat4 model = glm::rotate(glm::mat4(1.0f), angle, glm::vec3(0.0f, 1.0f, 0.0f)) ;
-        glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model)) ;
 
         // Draw a sphere
         glDrawElements(GL_TRIANGLES, indices.size(), GL_UNSIGNED_INT, 0);
@@ -359,6 +407,7 @@ int main()
 
     return 0;
 }
+
 ```
 <br>
 

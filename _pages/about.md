@@ -16,4 +16,4 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am Amr Morsy, a Software Engineer and a Computational Artist with over five years of experience in Computer Graphics, Computer Animation, and Game Development. I specialize in crafting immersive game engines, advanced simulations, captivating animations and engaging games. 
+I am Amr Morsy, a Software Engineer and a Computational Artist with over five years of experience in Computer Graphics, Computer Animation, and Game Development. I specialize in crafting immersive game engines, advanced simulations, captivating animations and engaging video games. 

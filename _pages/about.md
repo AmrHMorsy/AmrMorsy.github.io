@@ -16,4 +16,4 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am Amr Morsy, a graphics programmer with over five years of experience crafting immersive game engines, advanced simulations, captivating animations and engaging video games. 
+I am Amr Morsy, a graphics programmer with over 5 years of experience. My expertise includes developing game engines, simulations, animations, and video games, with proficiency in parallel and multicore programming for optimizing large-scale projects.

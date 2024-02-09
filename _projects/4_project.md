@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Forgotten Waves
-description: shs
+title: Hair Simulation
+description: Real-time hair simulation developed in C++/Vulkan. Parallelized using OpenCL and features Physically-Based Rendering (PBR), image-based lighting (IBL) for enhanced realism, and an HDR skybox for a dynamic and immersive sky.
 img: assets/img/7.jpg
 redirect: https://github.com/AmrHMorsy/Raytracer
 importance: 3

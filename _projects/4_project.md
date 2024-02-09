@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Forgotten Waves
-description: -
+description: shs
 img: assets/img/7.jpg
 redirect: https://github.com/AmrHMorsy/Raytracer
 importance: 3

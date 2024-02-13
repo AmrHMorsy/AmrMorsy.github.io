@@ -4,7 +4,7 @@ title: Raytracer
 description: Advanced Raytracer application, developed in C++, that utilizes OpenMP for parallel computing to enhance performance. The project features global illumination, motion blur, depth of field, soft shadows and Phong Local Illumination
 img: assets/img/7.jpg
 redirect: https://github.com/AmrHMorsy/Raytracer
-importance: 3
+importance: 4
 category: work
 ---
 

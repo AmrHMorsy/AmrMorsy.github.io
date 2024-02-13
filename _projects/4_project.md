@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Noor 
-description: Rendering Engine (OpenGL) - Features Physically-Based Rendering (PBR), image-based lighting (IBL) for enhanced realism, and an HDR skybox for a dynamic and immersive sky.
+title: Rendering Engine 
+description: OpenGL Rendering Engine that supports advanced rendering techniques such as Physically-Based Rendering (PBR), Image-Based Lighting (IBL), HDR skyboxes, and dynamic soft shadows, enabling the creation of visually compelling and realistic scenes.
 img: assets/img/21.png
-redirect: https://github.com/AmrHMorsy/Raytracer
+redirect: https://github.com/AmrHMorsy/Rendering-Engine
 importance: 3
 category: work
 ---

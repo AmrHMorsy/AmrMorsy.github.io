@@ -1,13 +1,14 @@
 ---
 layout: page
-title: Cloth Simulation  [C++/OpenGL]
-description: Real-time cloth simulation, developed in C++/OpenGL, that employs a Mass-Spring System, inspired by the paper "Fast Simulation of Mass-Spring Systems" by Liu et al. Parallelized using OpenMP and features Physically-Based Rendering (PBR), image-based lighting (IBL) for enhanced realism, and an HDR skybox for a dynamic, immersive sky.
+title: Car Crash Simulation [C++/Vulkan]
+description: Real-time car crash simulation developed in C++/Vulkan, that employs Finite Element Method (FEM). Parallelized using Compute Shaders and features Physically-Based Rendering (PBR), image-based lighting (IBL) for enhanced realism, and an HDR skybox for a dynamic and immersive sky. 
 img: assets/img/3.jpg
-redirect: https://github.com/AmrHMorsy/Cloth-Simulation
+redirect: https://github.com/AmrHMorsy/Car-Crash-Simulation
 importance: 2
 category: work
 giscus_comments: true
 ---
+
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.

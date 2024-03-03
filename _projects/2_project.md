@@ -5,7 +5,7 @@ description: Real-time cloth simulation, developed in C++/OpenGL, that employs a
 img: assets/img/3.jpg
 redirect: https://github.com/AmrHMorsy/Cloth-Simulation
 importance: 2
-category: work
+category: Open-Source Projects
 giscus_comments: true
 ---
 

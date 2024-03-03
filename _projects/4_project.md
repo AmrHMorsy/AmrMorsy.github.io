@@ -5,7 +5,7 @@ description: Advanced Raytracer application, developed in C++, that utilizes Ope
 img: assets/img/7.jpg
 redirect: https://github.com/AmrHMorsy/Raytracer
 importance: 4
-category: work
+category: Open-Source Projects
 ---
 
 Every project has a beautiful feature showcase page.

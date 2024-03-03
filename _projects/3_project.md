@@ -5,7 +5,7 @@ description: OpenGL Rendering Engine that features Physically-Based Rendering (P
 img: assets/img/21.png
 redirect: https://github.com/AmrHMorsy/Rendering-Engine
 importance: 3
-category: work
+category: Open-Source Projects
 ---
 
 Every project has a beautiful feature showcase page.

@@ -1,14 +1,10 @@
-- title: General Information
-  type: map
-  contents:
-    - name: Full Name
-      value: Amr Morsy
-    - name: Languages
-      value: English, Arabic, French
-
 - title: Education
   type: time_table
   contents:
+    - title: Msc Computer Science
+      institution: Concordia University | Montréal, Canada
+      year: 2024 - 2026
+      description:
     - title: Bsc Computer Science
       institution: Concordia University | Montréal, Canada
       year: 2019 - 2024
@@ -44,8 +40,3 @@
     - title: <a href="https://github.com/amrhmorsy/raytracer">Raytracer</a>
       year:
       description: Advanced Raytracer application, developed in C++, that utilizes OpenMP for parallel computing to enhance performance. The project features global illumination, motion blur, depth of field, soft shadows and Phong Local Illumination. 
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Chess, Gym, Reading, Walking and Listening to LOFI/Chill Music

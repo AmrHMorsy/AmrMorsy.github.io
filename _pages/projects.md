@@ -5,7 +5,7 @@ permalink: /projects/
 description:
 nav: true
 nav_order: 2
-display_categories: [Open-Source Projects, Games]
+display_categories: [Open-Source Projects, Animations, Games]
 horizontal: false
 ---
 

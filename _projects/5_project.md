@@ -5,7 +5,7 @@ description: A digital art animation of a young man starting fresh in his new ap
 img: assets/img/A.png
 redirect: https://www.youtube.com/watch?v=DN4eFaIoUz0
 importance: 4
-category: Animations
+category: Computer Animations
 ---
 
 Every project has a beautiful feature showcase page.

@@ -2,7 +2,7 @@
 layout: page
 title: New Beginings
 description: A digital art animation of a young man starting fresh in his new apartment in the cosmos, surrounded by the echoes of his past, yet excited for the future and ready for what's next. 
-img: assets/img/A.jpg
+img: assets/img/A.png
 redirect: https://youtube.com/Amr_Morsy
 importance: 4
 category: Animations

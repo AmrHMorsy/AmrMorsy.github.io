@@ -1,11 +1,13 @@
+
 ---
 layout: page
-title: Ray Tracer
-description: Advanced Raytracer application, developed in C++, that utilizes OpenMP for parallel computing to enhance performance. The project features global illumination, motion blur, depth of field, soft shadows and Phong Local Illumination
-img: assets/img/7.jpg
-redirect: https://github.com/AmrHMorsy/Raytracer
-importance: 4
+title: Cloth Simulation
+description: Real-time cloth simulation, developed in C++/OpenGL, that employs a Mass-Spring System, inspired by the paper "Fast Simulation of Mass-Spring Systems" by Liu et al. Parallelized using OpenMP and features Physically-Based Rendering (PBR), image-based lighting (IBL) for enhanced realism, and an HDR skybox for a dynamic, immersive sky.
+img: assets/img/3.jpg
+redirect: https://github.com/AmrHMorsy/Cloth-Simulation
+importance: 5
 category: Open-Source Projects
+giscus_comments: true
 ---
 
 Every project has a beautiful feature showcase page.
@@ -79,5 +81,4 @@ Here's the code for the last row of images above:
 </div>
 ```
 {% endraw %}
-
 

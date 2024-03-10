@@ -3,15 +3,21 @@ layout: page
 title: New Beginings
 description: A digital art animation of a young man starting fresh in his new apartment in the cosmos, surrounded by the echoes of his past, yet excited for the future and ready for what's next. 
 img: assets/img/A.png
-redirect: https://www.youtube.com/watch?v=DN4eFaIoUz0
+redirect: https://amrmorsy8.artstation.com/projects/49Gd6W
 importance: 4
 category: Computer Animations
 ---
+
+
+
+
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
 Make your photos 1/3, 2/3, or full width.
 
+# 
+# https://www.youtube.com/watch?v=DN4eFaIoUz0
 To give your project a background in the portfolio page, just add the img tag to the front matter like so:
 
     ---

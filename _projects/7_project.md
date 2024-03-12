@@ -3,7 +3,7 @@ layout: page
 title: The Quiet Sanctuary
 description: A digital art animation showing the quiet sanctuary of a person on a journey to discover the secrets of the universe with the power of curiosity and knowledge.
 img: assets/img/Q.png
-redirect: https://amrmorsy8.artstation.com/projects/49Gd6W
+redirect: https://www.artstation.com/artwork/Ry9OOy
 importance: 4
 category: Computer Animations
 ---

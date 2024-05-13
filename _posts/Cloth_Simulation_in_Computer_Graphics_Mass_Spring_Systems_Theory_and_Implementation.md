@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cloth Simulation in Computer Graphics: Mass-Spring Systems - Theory and Implementation
+title: Cloth Simulation in Computer Graphics Mass-Spring Systems - Theory and Implementation
 date: 2024-05-14
 description:
 tags:

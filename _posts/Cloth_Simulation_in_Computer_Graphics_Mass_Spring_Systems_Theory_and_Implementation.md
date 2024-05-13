@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Rendering Spheres in C++ and OpenGL
-date: 2023-12-07 00:00:00-0400
+title: Cloth Simulation in Computer Graphics: Mass-Spring Systems - Theory and Implementation
+date: 2024-05-14
 description:
 tags:
 categories:

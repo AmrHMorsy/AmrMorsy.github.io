@@ -1,13 +1,11 @@
 ---
 layout: post
-title: Cloth Simulation in Computer Graphics Mass-Spring Systems - Theory and Implementation
-date: 2024-05-14 15:09:00
+title: Cloth Simulation in Computer Graphics Mass-Spring Systems Theory and Implementation
+date: 2015-07-15 15:09:00
 description:
 tags:
-categories:
-giscus_comments: false
-related_posts: false
-related_publications:
+categories: 
+featured: false
 ---
 
 By definition, a sphere is a 3D surface, where every vertex on the sphere is at the same distance from a given point. This given point is called the centre of the sphere, and this distance is called the radius of the sphere.

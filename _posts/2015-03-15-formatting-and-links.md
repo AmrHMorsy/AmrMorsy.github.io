@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cloth Simulation using Mass-Spring Systems: Theory and Implementation
+title: Cloth Simulation using Mass-Spring Systems - Theory and Implementation
 date: 2024-05-13 15:09:00
 description:
 tags:
@@ -14,4 +14,4 @@ Cloth simulation is one of the subfields within physically-based deformable mode
  
 In this blog, we will focus on implementing cloth simulation using the mass-spring system. This system is simpler and easier to implement than more physically consistent models derived from continuum mechanics, such as the finite element method. The mass-spring system is a widely used method to simulate hair, cloth and, to a lesser extent, elastic solids. Although it is not the most accurate technique, it is fast and stable, making it ideal for real-time applications like video games, where speed is often prioritised over precision.
  
-We will begin by exploring various time integration methods used in simulating cloth with mass-spring systems. We will start with the explicit Euler and implicit Euler methods. Next, we will introduce a new, faster, and more stable time integration scheme that uses a solver based on the block coordinate descent method. This technique is detailed in the paper 'Fast Simulation of Mass-Spring Systems,' and it will be the basis for our implementation in the cloth simulation project. Finally, we will showcase the cloth animation in different scenes and assess its accuracy and speed.
+We will begin by exploring various time integration methods used in simulating cloth with mass-spring systems. We will start with the explicit Euler and the implicit Euler methods. Next, we will introduce a new, faster, and more stable time integration scheme that uses a solver based on the block coordinate descent method. This technique is detailed in the paper 'Fast Simulation of Mass-Spring Systems,' and it will be the basis for our implementation in the cloth simulation project. Finally, we will showcase the cloth animation in different scenes and assess its accuracy and speed.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cloth Simulation using Mass-Spring Systems - Theory and Implementation
+title: Cloth Simulation using Mass-Spring Systems: Theory and Implementation
 date: 2024-05-13 15:09:00
 description:
 tags:

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Ray Tracer
+title: Volumetric Fog Rendering
 description: Advanced Raytracer application, developed in C++, that utilizes OpenMP for parallel computing to enhance performance. The project features global illumination, motion blur, depth of field, soft shadows and Phong Local Illumination
 img: assets/img/A.png
 redirect: https://github.com/AmrHMorsy/Raytracer

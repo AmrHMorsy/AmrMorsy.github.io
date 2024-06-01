@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Ocean Simulation
-description: Real-time ocean simulation developed in C++/OpenGL, leveraging Fast Fourier Transform (FFT) and OpenCL for wave simulation. Features Physically-Based Rendering (PBR), image-based lighting (IBL) for enhanced realism, and an HDR skybox for a dynamic, immersive sky. Inspired by Jerry Tessendorf's paper 'Simulating Ocean Water'.
+description: Real-time ocean simulation developed in C++/OpenGL, leveraging Fast Fourier Transform (FFT) and OpenCL for wave simulation. Features Physically-Based Rendering (PBR), image-based lighting (IBL) for enhanced realism, and an HDR skybox for a dynamic, immersive sky. Inspired by Jerry Tessendorf's paper 'Simulating Ocean Wa ter'.
 img: assets/img/12.jpg
 redirect: https://github.com/AmrHMorsy/Ocean-Simulation
 importance: 1

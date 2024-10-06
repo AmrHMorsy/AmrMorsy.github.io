@@ -6,7 +6,6 @@ img: assets/img/12.jpg
 redirect: https://github.com/AmrHMorsy/Ocean-Simulation
 importance: 1
 category:
-related_publications: einstein1956investigations, einstein1950meaning
 ---
 
 Every project has a beautiful feature showcase page.

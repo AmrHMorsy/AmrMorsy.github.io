@@ -5,7 +5,7 @@ description: Real-time Skeletal Animation in C++/OpenGL using Assimp, featuring 
 img: assets/img/s.png
 redirect: https://github.com/AmrHMorsy/Skeletal-Animation-OpenGL
 importance: 3
-category: Open-Source Projects
+category:
 ---
 
 Every project has a beautiful feature showcase page.

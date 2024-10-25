@@ -5,7 +5,7 @@ description: Real-time ocean simulation developed in C++/OpenGL, leveraging Fast
 img: assets/img/12.jpg
 redirect: https://github.com/AmrHMorsy/Ocean-Simulation
 importance: 1
-category: Simulations
+category:
 ---
 
 Every project has a beautiful feature showcase page.

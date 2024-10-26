@@ -254,9 +254,9 @@ jekyll-archives:
     tag: archive-tag
     category: archive-category
   permalinks:
-    year: '/blog/:year/'
-    tag: '/blog/tag/:name/'
-    category: '/blog/category/:name/'
+    year: '/Blog/:year/'
+    tag: '/Blog/tag/:name/'
+    category: '/Blog/category/:name/'
 
 display_tags: [] # these tags will be displayed on the front page of your blog
 display_categories: [] # these categories will be displayed on the front page of your blog

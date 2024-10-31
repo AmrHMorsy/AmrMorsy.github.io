@@ -14,7 +14,8 @@ When a beam of light hits the surface of an objecy, part of its energy is absorb
 
 In this blog post, we will discuss the mathematics of how to calculate the refraction vector. 
 
-### Snell Law
+<br> 
+### Snell Law <br>
 
 Transparent surfaces possess a property called the **index of refraction**. This refractive index determines how much the path of light is bent or refracted, when entering a material. This is explained by <u>**Snell's Law**</u>, which states that: 
 

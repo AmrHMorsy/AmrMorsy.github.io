@@ -17,17 +17,11 @@ In this blog post, we will discuss the mathematics of how to calculate the refra
 <br> 
 ### Snell Law <br>
 
-Transparent surfaces possess a property called the **index of refraction**. This refractive index determines how much the path of light is bent or refracted, when entering a material. This is explained by <u>**Snell's Law**</u>, which states that: 
+Transparent surfaces possess a property called the **index of refraction**. This refractive index determines how much the path of light is bent or refracted, when entering a material. This can be explained by **Snell's Law**. Let $$n_L$$ be the index of refraction of the material the light is leaving, $$\theta_L$$ be the angle of incidence, $$n_T$$ be the index of refraction of the material the light is entering and $$\theta_T$$ be the angle of refraction. The law states that: 
 
 $$
 n_L sin \theta_L = n_T sin \theta_T
 $$
 
-where
-
-$$n_L$$: Index of refraction of the material the light is leaving <br> 
-$$\theta_L$$: Angle of incidence <br>
-$$n_T$$: Index of refraction of the material the light is entering <br>
-$$\theta_T$$: Angle of refraction <br>
 
 Each medium has its own index of refraction. For example, the index of refraction of air is 1.000293, while the index of refraction of diamond is 2.417. Higher indexes of refraction create a greated bending effect at the interface between two materials; the refraction vector bends more towards the normal vector. 

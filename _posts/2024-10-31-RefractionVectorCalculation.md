@@ -21,15 +21,13 @@ Transparent surfaces possess a property called the **index of refraction**. This
 
 Let $$n_L$$ be the index of refraction of the material the light is leaving, $$\theta_L$$ be the angle of incidence, $$n_T$$ be the index of refraction of the material the light is entering and $$\theta_T$$ be the angle of refraction. 
 
-**Snell Law** states that: 
+**Snell Law** states that
 
-<br>
 $$
 n_L sin \theta_L = n_T sin \theta_T
 $$
-<br>
 
-Each medium has its own index of refraction. For example, the index of refraction of air is 1.000293, while the index of refraction of diamond is 2.417. Higher indexes of refraction create a greated bending effect at the interface between two materials; the refraction vector bends more towards the normal vector. 
+Each medium has its own index of refraction. For example, the index of refraction of air is **1.000293**, while the index of refraction of diamond is **2.417**. Higher indexes of refraction create a greated bending effect at the interface between two materials; the refraction vector bends more towards the normal vector. 
 
 <br> 
 ### Decomposition of Vectors<br> 
@@ -50,7 +48,7 @@ $$
 L_⊥ = L - L_{||} = L - (N.L)N
 $$
 
-We also need to determine $$|L_⊥|$$. We will later use it in the equation of the refraction vector. 
+We also need to determine $$|L_⊥|$$ , because we will later use it in the equation of the refraction vector. 
 
 Since 
 

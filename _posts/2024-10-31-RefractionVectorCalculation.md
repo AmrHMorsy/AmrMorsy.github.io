@@ -19,7 +19,9 @@ In this blog post, we will discuss the mathematics of how to calculate the refra
 
 Transparent surfaces possess a property called the **index of refraction**. This refractive index determines how much the path of light is bent or refracted, when entering a material. This can be explained by **Snell's Law**. 
 
-Let $$n_L$$ be the index of refraction of the material the light is leaving, $$\theta_L$$ be the angle of incidence, $$n_T$$ be the index of refraction of the material the light is entering and $$\theta_T$$ be the angle of refraction. **Snell Law** states that: 
+Let $$n_L$$ be the index of refraction of the material the light is leaving, $$\theta_L$$ be the angle of incidence, $$n_T$$ be the index of refraction of the material the light is entering and $$\theta_T$$ be the angle of refraction. 
+
+**Snell Law** states that: 
 
 <br>
 $$
@@ -34,7 +36,7 @@ Each medium has its own index of refraction. For example, the index of refractio
 
 We assume that the normal vector $$N$$ and the incoming light $L$ has been normalized to unit length. 
 
-Each vector $$V$$ has both parallel component relative to $$N$$, $$V_{||}$$, and perpendicular component relative to $$N$$, $$V_⊥$$ ; 
+Each vector has both parallel component and perpendicular component relative to $$N$$. 
   
 The parallel component of $$L$$ along $$N$$ is 
 
@@ -42,21 +44,13 @@ $$
 L_{||} = (N.L)N
 $$
 
-Since 
-
-$$ 
-L = L_{||} + L_⊥
-$$
-
-then the perpendicular component of $$L$$ along $$N$$ is 
+The perpendicular component of $$L$$ along $$N$$ is 
 
 $$
-L_⊥ = L - (N.L)N
+L_⊥ = L - L_{||} = L - (N.L)N
 $$
 
-Also, we need to determine the length of the $$L_⊥$$, $$|L_⊥|$$. We will later use it in the equation of the refraction vector. 
-
-We will use the concept of the right-angled triangle: 
+We also need to determine $$|L_⊥|$$. We will later use it in the equation of the refraction vector. 
 
 Since 
 

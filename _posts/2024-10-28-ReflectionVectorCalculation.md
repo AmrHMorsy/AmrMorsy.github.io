@@ -46,7 +46,7 @@ Alternatively, this can be expressed as $$N cos \theta$$
 The perpendicular component of $$L$$ along $$N$$ is: 
 
 $$
-L_⊥ = L - (L.N)N
+L_⊥ = L - L_{||} = L - (L.N)N
 $$
 
 <div class="row mt-3">

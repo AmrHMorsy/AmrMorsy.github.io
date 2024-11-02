@@ -61,12 +61,13 @@ We will use the concept of the right-angled triangle:
 Since 
 
 $$
-sin\theta_L = $$|L_⊥|$$ / L
+sin\theta_L = \frac{|L_⊥|}{L}
 $$ 
 
 then, 
+
 $$
-|L_⊥| = |L| sin\theta_L
+|L_⊥| = |L| sin \theta_L
 $$
 
 Since $$L$$ has been normalized to unit length, then 

@@ -40,7 +40,7 @@ Each material has its own unique index of refraction. For example, the index of 
 To calculate the refraction vector, we first need to decompose the incoming light vector $$L$$ in relation to the surface normal vector 
 $$N$$
 
-We assume that the normal vector $$N$$ and the incoming light $L$ has been normalized to unit length. 
+We assume that the normal vector $$N$$ and the incoming light $$L$$ has been normalized to unit length. 
 
 Each vector has both parallel component and perpendicular component relative to the normal $$N$$. 
   
@@ -61,9 +61,9 @@ $$
 <br>
 ### Calculating Component Magnitudes <br>
 
-Next, let's calculate the magnitudes of $$L_{||}$$ and $$L_⊥$$
+Next, let's calculate the magnitudes of $$ L_{||} $$ and $$ L_⊥ $$
 
-Since the vectors $$L$$, $$L_{||}$$ and $$L_⊥$$ form a right-angled triangle, we can use trignometric relationships: 
+Since the vectors $$L$$, $$ L_{||} $$ and $$ L_⊥ $$ form a right-angled triangle, we can use trignometric relationships: 
 
 $$
 sin\theta_L = \frac{|L_⊥|}{L}
@@ -76,7 +76,7 @@ cos\theta_L = \frac{|L_{||}|}{L}
 $$ 
 
 
-Since $$L$$ has been normalized to unit length (i.e., $$|L| = 1$$), then 
+Since $$L$$ has been normalized to unit length (i.e., $$ |L| = 1 $$), then 
 
 $$
 |L_⊥| = sin \theta_L

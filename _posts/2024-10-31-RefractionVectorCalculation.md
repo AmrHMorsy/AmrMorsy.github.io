@@ -42,28 +42,37 @@ $$
 L_{||} = (N.L)N
 $$
 
+Alternatively, this can be expressed as $$N cos \theta$$
+
 The perpendicular component of $$L$$ along $$N$$ is 
 
 $$
 L_⊥ = L - L_{||} = L - (N.L)N
 $$
 
-We also need to calculate $$|L_⊥|$$ 
+Next, let's calculate the magnitude of $$L_{||}$$ and $$L_⊥$$
 
-Since 
+The vectors $$L$$, $$L_{||}$$ and $$L_⊥$$ construct a right-angled triangle. This means that
 
 $$
 sin\theta_L = \frac{|L_⊥|}{L}
 $$ 
 
-then, 
+and 
 
 $$
-|L_⊥| = |L| sin \theta_L
-$$
+cos\theta_L = \frac{|L_{||}|}{L}
+$$ 
+
 
 Since $$L$$ has been normalized to unit length, then 
 
 $$
-|L_⊥| = sin\theta_L
+|L_⊥| = sin \theta_L
+$$
+
+and 
+
+$$
+|L_{||}| = cos \theta_L
 $$

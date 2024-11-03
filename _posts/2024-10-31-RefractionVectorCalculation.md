@@ -10,7 +10,7 @@ featured: false
 
 ### Introduction <br>
 
-When a beam of light hits the surface of an objecy, part of its energy is absorbed by the surface, part of its energy is reflected away and part of its energy may refract through the object itself. 
+When a beam of light hits the surface of an object, part of its energy is absorbed by the surface, part of its energy is reflected away and part of its energy may refract through the object itself. 
 
 In this blog post, we will discuss the mathematics of how to calculate the refraction vector. 
 
@@ -48,7 +48,7 @@ $$
 L_⊥ = L - L_{||} = L - (N.L)N
 $$
 
-We also need to determine $$|L_⊥|$$ , because we will later use it in the equation of the refraction vector. 
+We also need to calculate $$|L_⊥|$$ 
 
 Since 
 

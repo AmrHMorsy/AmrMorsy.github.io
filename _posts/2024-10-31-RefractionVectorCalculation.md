@@ -12,6 +12,12 @@ featured: false
 
 When a beam of light hits the surface of an object, part of its energy is absorbed by the surface, part of its energy is reflected away and part of its energy may refract through the object itself. 
 
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html loading="eager" path="assets/img/REFRACTION0.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
 In this post, we will explore the mathematics behind calculating the refraction vector. 
 
 <br> 

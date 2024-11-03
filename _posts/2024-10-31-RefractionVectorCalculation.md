@@ -61,9 +61,18 @@ $$
 <br>
 ### Calculating Component Magnitudes <br>
 
-Next, let's calculate the magnitudes of $$ L_{||} $$ and $$ L_⊥ $$
+Next, let's calculate the magnitudes of 
+$$L_{||}$$
+and 
+$$L_⊥$$
 
-Since the vectors $$L$$, $$ L_{||} $$ and $$ L_⊥ $$ form a right-angled triangle, we can use trignometric relationships: 
+Since the vectors 
+$$L$$
+, 
+$$L_{||}$$ 
+and
+$$L_⊥$$ 
+form a right-angled triangle, we can use trignometric relationships: 
 
 $$
 sin\theta_L = \frac{|L_⊥|}{L}
@@ -76,7 +85,9 @@ cos\theta_L = \frac{|L_{||}|}{L}
 $$ 
 
 
-Since $$L$$ has been normalized to unit length (i.e., $$ |L| = 1 $$), then 
+Since $$L$$ has been normalized to unit length (i.e., 
+$$|L| = 1$$
+), then 
 
 $$
 |L_⊥| = sin \theta_L

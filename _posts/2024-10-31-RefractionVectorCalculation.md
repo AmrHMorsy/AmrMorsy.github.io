@@ -26,6 +26,12 @@ Let:
 - $$n_T$$ be the index of refraction of the material the light is entering, and
 - $$\theta_T$$ be the angle of refraction. 
 
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html loading="eager" path="assets/img/REFRACTION1.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
 According to Snell's Law, 
 
 $$
@@ -58,6 +64,18 @@ $$
 L_⊥ = L - L_{||} = L - (N.L)N
 $$
 
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html loading="eager" path="assets/img/REFRACTION2.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html loading="eager" path="assets/img/REFRACTION3.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
 <br>
 ### Calculating Component Magnitudes <br>
 
@@ -84,6 +102,12 @@ $$
 cos\theta_L = \frac{|L_{||}|}{L}
 $$ 
 
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html loading="eager" path="assets/img/REFRACTION4.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 Since $$L$$ has been normalized to unit length (i.e., 
 $$|L| = 1$$

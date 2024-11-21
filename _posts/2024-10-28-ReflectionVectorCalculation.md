@@ -4,7 +4,7 @@ title: Reflection Vector Calculation
 date: 2024-10-28 12:00:00
 description:
 tags:
-categories:
+categories: Computer Graphics
 featured: false
 ---
 

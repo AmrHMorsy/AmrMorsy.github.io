@@ -1,9 +1,11 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - AmrHMorsy
+
+repo_description_lines_max: 2
 
 github_repos:
-  - amrhmorsy/ocean-simulation
-  - amrhmorsy/raytracer
-  - amrhmorsy/cloth-simulation
-  - amrhmorsy/hyper-quicksort
+  - AmrHMorsy/Cloth-Simulation-OpenGL
+  - AmrHMorsy/Ocean-Simulation-OpenGL
+  - AmrHMorsy/Rendering-Engine-OpenGL
+  - AmrHMorsy/Skeletal-Animation-OpenGL
+  - AmrHMorsy/Ray-Tracing-Engine

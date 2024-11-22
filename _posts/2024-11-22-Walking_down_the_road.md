@@ -11,16 +11,16 @@ featured: false
 
 ### Walking down the road, 
 
-Walking down the road, 
-It’s foggy and dim. 
-No compass for directions, 
-No destination on the horizon. 
+Walking down the road, <br>
+It’s foggy and dim. <br>
+No compass for directions, <br>
+No destination on the horizon. <br>
 
-Walking down the road, 
-The Path behind me crumbles. 
-The Path ahead of me is blurry. 
-So no choice but to keep, 
-walking down the road. 
+Walking down the road, <br>
+The Path behind me crumbles. <br>
+The Path ahead of me is blurry. <br>
+So no choice but to keep, <br>
+walking down the road. <br>
 
 
 <div class="row mt-3">

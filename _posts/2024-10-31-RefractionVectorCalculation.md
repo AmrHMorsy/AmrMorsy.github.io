@@ -23,7 +23,7 @@ In this post, we will explore the mathematics behind calculating the refraction 
 <br> 
 ### Snell Law <br>
 
-Transparent surfaces possess a has called the **index of refraction**. This refractive index determines how much the path of light is bent or refracted, when entering a material. This can be explained by **Snell's Law**. 
+Transparent surfaces has a property called the **index of refraction**. This refractive index determines how much the path of light is bent or refracted, when entering a material. This can be explained by **Snell's Law**. 
 
 Let:
 
@@ -49,8 +49,7 @@ Each material has its own unique index of refraction. For example, the index of 
 <br> 
 ### Decomposition of Incoming Light Vector $$L$$ <br> 
 
-To calculate the refraction vector, we first need to decompose the incoming light vector $$L$$ in relation to the surface normal vector 
-$$N$$. 
+To calculate the refraction vector, we first need to decompose the incoming light vector $$L$$ in relation to the surface normal vector $$N$$. 
 
 We assume that the normal vector $$N$$ and the incoming light $$L$$ has been normalized to unit length. 
 
@@ -59,10 +58,8 @@ Each vector has both parallel component and perpendicular component relative to 
 The parallel component of $$L$$ along $$N$$ is 
 
 $$
-L_{||N} = (N.L)N
+L_{||N} = (N.L)N = N cos \theta
 $$
-
-Alternatively, this can be expressed as $$N cos \theta$$
 
 The perpendicular component of $$L$$ along $$N$$ is 
 
@@ -70,17 +67,6 @@ $$
 L_{⊥N} = L - L_{||N} = L - (N.L)N
 $$
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/REFRACTION2.png" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/REFRACTION3.png" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
 
 Next, let's calculate the magnitudes of 
 $$L_{||}$$
@@ -90,7 +76,7 @@ $$L_⊥$$
 Since the vectors 
 $$L$$
 , 
-$$L_{||}$$ 
+$$N$$ 
 and
 $$L_⊥$$ 
 form a right-angled triangle, we can use trignometric relationships: 
@@ -106,12 +92,6 @@ cos\theta_L = \frac{|L_{||}|}{L}
 $$ 
 
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/REFRACTION4.png" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-
 Since $$L$$ has been normalized to unit length (i.e., 
 $$|L| = 1$$
 ), then 
@@ -126,26 +106,49 @@ $$
 |L_{||}| = cos \theta_L
 $$
 
-Now, we are ready to calculate the refraction vector $$T$$. 
+### Decomposition of Refraction Vector $$T$$ <br> 
 
-Just like we did with the incoming vector $$L$$, we are going to decompose the refraction vector $$T$$ in relation to the surface normal vector $$N$$. 
+Just like we did with the incoming light vector $$L$$, we are going to decompose the refraction vector $$T$$ in relation to the surface normal vector $$N$$. 
 
 The parallel component of $$T$$ along $$N$$ is 
 
 $$
-T_{||} = (-N.T)(-N)
+T_{||N} = (-N.T)(-N)
 $$
 
-We can calculate the perpendicular component of $$T$$ along $$N$$ b 
+We can calculate the perpendicular component of $$T$$ along $$N$$ as: 
 
 $$
-T_⊥ = T - T_{||}
+T_{⊥N} = T - T_{||}
 $$
 
-However, we do know $$T$$. Hence, we must find another way to calculate $$T_⊥$$. 
+However, we do not know $$T$$. Hence, we must find another way to calculate $$T_{⊥N}$$. 
 
-We know that $$T_⊥$$ has the same direction as $$L_⊥$$. We also know that the magnitude of $$T_⊥$$ is equal to $$sin \theta_T$$. Therefore, we can calculate $$T_⊥$$ as: 
+Before we calculate $$T_{⊥N}$$, let's first calculate the magnitude of $$T_{⊥N}$$ ; $$|T_{⊥N}|$$
+
+Since the vectors 
+$$T$$
+, 
+$$-N$$ 
+and
+$$T_{⊥N}$$ 
+form a right-angled triangle, we can use trignometric relationships: 
+ 
+$$
+sin\theta_T = \frac{|T_{⊥N}|}{|T|}
+$$ 
+
+
+Hence, 
 
 $$
-T_⊥ = normalized($$L_⊥$$) sin \theta_T
+|T_{⊥N}| = sin\theta_T
+$$
+
+Now, we are ready to calculate $$T_{⊥N}$$. 
+
+Since $$T_{⊥N}$$ has the same direction as $$L_{⊥N}$$, then we can calculate $$T_⊥$$ as: 
+
+$$
+T_⊥ = \frac{L_{⊥N}}{|L_{⊥N}|} sin \theta_T = \frac{L-(N.L)N}{sin \theta_L} sin \theta_T
 $$

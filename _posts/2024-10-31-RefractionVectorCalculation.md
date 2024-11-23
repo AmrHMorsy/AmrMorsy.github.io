@@ -47,10 +47,10 @@ $$
 Each material has its own unique index of refraction. For example, the index of refraction of air is **1.000293**, while the index of refraction of diamond is **2.417**. Higher indexes of refraction create a greater bending effect at the interface between two materials, causing the refraction vector to bend more towards the normal vector.
 
 <br> 
-### Decomposition of Vectors<br> 
+### Decomposition of Incoming Light Vector $$L$$ <br> 
 
 To calculate the refraction vector, we first need to decompose the incoming light vector $$L$$ in relation to the surface normal vector 
-$$N$$
+$$N$$. 
 
 We assume that the normal vector $$N$$ and the incoming light $$L$$ has been normalized to unit length. 
 
@@ -59,7 +59,7 @@ Each vector has both parallel component and perpendicular component relative to 
 The parallel component of $$L$$ along $$N$$ is 
 
 $$
-L_{||} = (N.L)N
+L_{||N} = (N.L)N
 $$
 
 Alternatively, this can be expressed as $$N cos \theta$$
@@ -67,7 +67,7 @@ Alternatively, this can be expressed as $$N cos \theta$$
 The perpendicular component of $$L$$ along $$N$$ is 
 
 $$
-L_⊥ = L - L_{||} = L - (N.L)N
+L_{⊥N} = L - L_{||N} = L - (N.L)N
 $$
 
 <div class="row mt-3">
@@ -81,9 +81,6 @@ $$
         {% include figure.html loading="eager" path="assets/img/REFRACTION3.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-
-<br>
-### Calculating Component Magnitudes <br>
 
 Next, let's calculate the magnitudes of 
 $$L_{||}$$
@@ -131,7 +128,7 @@ $$
 
 Now, we are ready to calculate the refraction vector $$T$$. 
 
-Just like we did with the vector $$L$$, we are going to decompose the refraction vector $$T$$ in relation to the surface normal vector $$N$$. 
+Just like we did with the incoming vector $$L$$, we are going to decompose the refraction vector $$T$$ in relation to the surface normal vector $$N$$. 
 
 The parallel component of $$T$$ along $$N$$ is 
 
@@ -139,3 +136,16 @@ $$
 T_{||} = (-N.T)(-N)
 $$
 
+We can calculate the perpendicular component of $$T$$ along $$N$$ b 
+
+$$
+T_⊥ = T - T_{||}
+$$
+
+However, we do know $$T$$. Hence, we must find another way to calculate $$T_⊥$$. 
+
+We know that $$T_⊥$$ has the same direction as $$L_⊥$$. We also know that the magnitude of $$T_⊥$$ is equal to $$sin \theta_T$$. Therefore, we can calculate $$T_⊥$$ as: 
+
+$$
+T_⊥ = normalized($$L_⊥$$) sin \theta_T
+$$

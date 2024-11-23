@@ -23,7 +23,7 @@ In this post, we will explore the mathematics behind calculating the refraction 
 <br> 
 ### Snell Law <br>
 
-Transparent surfaces possess a property called the **index of refraction**. This refractive index determines how much the path of light is bent or refracted, when entering a material. This can be explained by **Snell's Law**. 
+Transparent surfaces possess a has called the **index of refraction**. This refractive index determines how much the path of light is bent or refracted, when entering a material. This can be explained by **Snell's Law**. 
 
 Let:
 
@@ -128,3 +128,14 @@ and
 $$
 |L_{||}| = cos \theta_L
 $$
+
+Now, we are ready to calculate the refraction vector $$T$$. 
+
+Just like we did with the vector $$L$$, we are going to decompose the refraction vector $$T$$ in relation to the surface normal vector $$N$$. 
+
+The parallel component of $$T$$ along $$N$$ is 
+
+$$
+T_{||} = (-N.T)(-N)
+$$
+

@@ -213,8 +213,8 @@ $$
 |T_{⊥N}| = sin\theta_T
 $$
 
-Now that we have  
-$$ |T_{⊥N}|$$
+Now that we have 
+$$|T_{⊥N}|$$
 , let's return to the problem of calculating 
 $$T_{⊥N}$$
 .
@@ -222,7 +222,7 @@ $$T_{⊥N}$$
 Since $$T_{⊥N}$$ has the same direction as $$L_{⊥N}$$, then we can calculate $$T_⊥$$ as: 
 
 $$
-T_⊥ = \frac{L_{⊥N}}{|L_{⊥N}|} sin \theta_T = \frac{L-(N.L)N}{sin \theta_L} sin \theta_T
+T_⊥ = \frac{L_{⊥N}}{|L_{⊥N}|} |T_{⊥N}| = \frac{L_{⊥N}}{|L_{⊥N}|} sin \theta_T = \frac{L-(N.L)N}{sin \theta_L} sin \theta_T
 $$
 
 

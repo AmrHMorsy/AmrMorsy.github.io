@@ -267,3 +267,4 @@ The equation above of calculating the refraction vector $$T$$ is only valid when
 $$
 sin \theta_L \leq \frac{n_T}{n_L}
 $$
+

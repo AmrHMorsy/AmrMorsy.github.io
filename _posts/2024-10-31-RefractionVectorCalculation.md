@@ -69,7 +69,11 @@ $$
 L_{||N} = (N.L)N = N cos \theta
 $$
 
-The perpendicular component of $$L$$ along $$N$$ can be calculated by subtracting $$L_{||N}$$ from $$L$$. That is,  
+The perpendicular component of $$L$$ along $$N$$ can be calculated by subtracting 
+$$L_{||N}$$ 
+from 
+$$L$$
+. That is,  
 
 $$
 L_{⊥N} = L - L_{||N} = L - (N.L)N
@@ -134,7 +138,11 @@ $$
 
 However, we do not know $$T$$. Hence, we must find another way to calculate $$T_{⊥N}$$. 
 
-Let's first calculate the magnitudes of $$T_{||N}$$ and $$T_{⊥N}$$. 
+Let's first calculate the magnitudes of 
+$$T_{||N}$$ 
+and 
+$$T_{⊥N}$$
+.
 
 Since the vectors 
 $$T$$
@@ -177,7 +185,11 @@ $$
 
 ### Calculation of Refraction Vector $$T$$ <br> 
 
-Finally, we can calculate the refraction vector $$T$$ by adding $$T_{||N}$$ and $$T_{⊥N}$$. That is, 
+Finally, we can calculate the refraction vector $$T$$ by adding 
+$$T_{||N}$$ 
+and 
+$$T_{⊥N}$$
+. That is, 
 
 $$
 T = T_{||N} + T_{⊥N}
@@ -194,7 +206,7 @@ $$
 
 Let's do some further simplification to the equation. 
 
-We can use **Snell Law** to replace \frac{sin\theta_T}{sin\theta_L} with \frac{n_L}{n_T}. This yields: 
+We can use **Snell Law** to replace $$\frac{sin\theta_T}{sin\theta_L}$$ with $$\frac{n_L}{n_T}$$. This yields: 
 
 $$
 T = -N cos \theta_T + \frac{n_L}{n_T}(L-(N.L)N)

@@ -14,12 +14,6 @@ featured: false
 
 When a beam of light hits the surface of an object, part of its energy is absorbed by the surface, part of its energy is reflected away and part of its energy may refract through the object itself. 
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/REFRACTION0.png" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-
 In this post, we will explore the mathematics behind calculating the refraction vector. 
 
 <br> 
@@ -34,12 +28,6 @@ Let:
 - $$\theta_L$$ be the angle of incidence, 
 - $$n_T$$ be the index of refraction of the material the light is entering, and
 - $$\theta_T$$ be the angle of refraction. 
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/REFRACTION1.png" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
 
 According to Snell's Law, 
 
@@ -280,10 +268,7 @@ Why ?
 
 Well, let's prove it. 
 
-<br>
-<br>
 #### Proof
-<br>
 
 From equation 1, we can deduce that the equation becomes invalid when the quantity inside the radical becomes negative.
 
@@ -344,4 +329,5 @@ $$
 $$
 sin \theta_L \leq \frac{n_T}{n_L}
 $$
+
 

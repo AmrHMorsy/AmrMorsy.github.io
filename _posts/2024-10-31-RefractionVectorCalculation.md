@@ -9,17 +9,21 @@ featured: false
 ---
 
 <br> 
-### Introduction <br>
+### **Introduction** <br>
 <br> 
 
 When a beam of light hits the surface of an object, part of its energy is absorbed by the surface, part of its energy is reflected away and part of its energy may refract through the object itself. 
 
 In this post, we will explore the mathematics behind calculating the refraction vector. 
 
-**Image**
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html loading="eager" path="assets/img/Refraction0.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 <br> 
-### Snell Law <br>
+### **Snell Law** <br>
 <br> 
 
 Transparent surfaces has a property called the **index of refraction**. This refractive index determines how much the path of light is bent or refracted, when entering a material. This can be explained by **Snell's Law**. 
@@ -39,7 +43,11 @@ $$
 
 Each material has its own unique index of refraction. For example, the index of refraction of air is **1.000293**, while the index of refraction of diamond is **2.417**. Higher indexes of refraction create a greater bending effect at the interface between two materials, causing the refraction vector to bend more towards the normal vector.
 
-**Image**
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html loading="eager" path="assets/img/Refraction1.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 Now, let: 
 
@@ -57,7 +65,11 @@ To calculate the refraction vector $$T$$, we first need to decompose the incomin
 
 Each vector has both a parallel component and perpendicular component relative to the normal vector $$N$$. 
   
-**Image**
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html loading="eager" path="assets/img/Refraction2.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 The parallel component of $$L$$ along $$N$$ is 
 
@@ -89,7 +101,11 @@ and
 $$L_{⊥N}$$ 
 form a right-angled triangle, we can use trignometric relationships to calculate their magnitudes. 
 
-**Image**
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html loading="eager" path="assets/img/Refraction3.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 
 We know that
@@ -120,12 +136,16 @@ $$
 $$
 
 <br> 
-### Decomposition of Refraction Vector $$T$$ <br> 
+### **Decomposition of Refraction Vector $$T$$** <br> 
 <br> 
 
 Just like we did with the incoming light vector $$L$$, we are going to decompose the refraction vector $$T$$ in relation to the surface normal vector $$N$$. 
 
-**Image**
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html loading="eager" path="assets/img/Refraction4.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 The parallel component of $$T$$ along $$N$$ is 
 
@@ -155,7 +175,11 @@ and
 $$T_{⊥N}$$ 
 form a right-angled triangle, we can use trignometric relationships to calculate their magnitudes. 
  
-**Image**
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html loading="eager" path="assets/img/Refraction5.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 We know that 
 
@@ -192,7 +216,7 @@ $$
 
 
 <br> 
-### Calculation of Refraction Vector $$T$$ <br> 
+### **Calculation of Refraction Vector $$T$$** <br> 
 <br> 
 
 Finally, we can calculate the refraction vector $$T$$ by adding 
@@ -272,7 +296,11 @@ $$n_L > n_T$$
 . 
 This phenomena is called **Total Internal Reflection**, which means that no refraction is happening and the vector is reflecting off the surface. In this case, the equation for calculating the reflection vector is the one used. 
 
-**Image**
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html loading="eager" path="assets/img/Refraction6.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 Expressed another way, we can say that equation 1 is only valid when 
 

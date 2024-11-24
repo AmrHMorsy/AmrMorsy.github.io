@@ -8,7 +8,9 @@ categories: Computer-Graphics
 featured: false
 ---
 
+<br> 
 ### Introduction <br>
+<br> 
 
 When a beam of light hits the surface of an object, part of its energy is absorbed by the surface, part of its energy is reflected away and part of its energy may refract through the object itself. 
 
@@ -22,6 +24,7 @@ In this post, we will explore the mathematics behind calculating the refraction 
 
 <br> 
 ### Snell Law <br>
+<br> 
 
 Transparent surfaces has a property called the **index of refraction**. This refractive index determines how much the path of light is bent or refracted, when entering a material. This can be explained by **Snell's Law**. 
 
@@ -56,6 +59,7 @@ We assume that $$L$$, $$N$$ and $$T$$ are normalized to unit length.
 
 <br> 
 ### Decomposition of Incoming Light Vector $$L$$ <br> 
+<br> 
 
 To calculate the refraction vector, we first need to decompose the incoming light vector $$L$$ in relation to the surface normal vector $$N$$. 
 
@@ -120,7 +124,9 @@ $$
 |L_{||}| = cos \theta_L
 $$
 
+<br> 
 ### Decomposition of Refraction Vector $$T$$ <br> 
+<br> 
 
 Just like we did with the incoming light vector $$L$$, we are going to decompose the refraction vector $$T$$ in relation to the surface normal vector $$N$$. 
 
@@ -182,8 +188,9 @@ T_⊥ = \frac{L_{⊥N}}{|L_{⊥N}|} sin \theta_T = \frac{L-(N.L)N}{sin \theta_L}
 $$
 
 
-
+<br> 
 ### Calculation of Refraction Vector $$T$$ <br> 
+<br> 
 
 Finally, we can calculate the refraction vector $$T$$ by adding 
 $$T_{||N}$$ 
@@ -212,3 +219,13 @@ $$
 T = -N cos \theta_T + \frac{n_L}{n_T}(L-(N.L)N)
 $$
 
+We can also replace 
+$$cos \theta_T$$ 
+with 
+$$\sqrt{1-sin^2 \theta_T}$$
+, which gives us 
+
+
+$$
+T = -N \sqrt{1-sin^2 \theta_T} + \frac{n_L}{n_T}(L-(N.L)N)
+$$

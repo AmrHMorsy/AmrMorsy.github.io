@@ -16,6 +16,8 @@ When a beam of light hits the surface of an object, part of its energy is absorb
 
 In this post, we will explore the mathematics behind calculating the refraction vector. 
 
+**Image**
+
 <br> 
 ### Snell Law <br>
 <br> 
@@ -37,7 +39,9 @@ $$
 
 Each material has its own unique index of refraction. For example, the index of refraction of air is **1.000293**, while the index of refraction of diamond is **2.417**. Higher indexes of refraction create a greater bending effect at the interface between two materials, causing the refraction vector to bend more towards the normal vector.
 
-Let: 
+**Image**
+
+Now, let: 
 
 - $$L$$ be the incoming light vector, 
 - $$N$$ be the normal vector, and 
@@ -49,12 +53,12 @@ We assume that $$L$$, $$N$$ and $$T$$ are normalized to unit length.
 ### Decomposition of Incoming Light Vector $$L$$ <br> 
 <br> 
 
-To calculate the refraction vector, we first need to decompose the incoming light vector $$L$$ in relation to the surface normal vector $$N$$. 
-
-We assume that the normal vector $$N$$ and the incoming light $$L$$ has been normalized to unit length. 
+To calculate the refraction vector $$T$$, we first need to decompose the incoming light vector $$L$$ in relation to the surface normal vector $$N$$. 
 
 Each vector has both a parallel component and perpendicular component relative to the normal vector $$N$$. 
   
+**Image**
+
 The parallel component of $$L$$ along $$N$$ is 
 
 $$
@@ -73,28 +77,31 @@ $$
 
 
 Next, let's calculate the magnitudes of 
-$$L_{||}$$
+$$L_{||N}$$
 and 
-$$L_⊥$$
+$$L_{⊥N}$$
 
 Since the vectors 
 $$L$$
 , 
-$$L_{||}$$ 
+$$L_{||N}$$ 
 and
-$$L_⊥$$ 
+$$L_{⊥N}$$ 
 form a right-angled triangle, we can use trignometric relationships to calculate their magnitudes. 
+
+**Image**
+
 
 We know that
 
 $$
-sin\theta_L = \frac{|L_⊥|}{L}
+sin\theta_L = \frac{|L_{⊥N}|}{L}
 $$ 
 
 and 
 
 $$
-cos\theta_L = \frac{|L_{||}|}{L}
+cos\theta_L = \frac{|L_{||N}|}{L}
 $$ 
 
 
@@ -103,13 +110,13 @@ $$|L| = 1$$
 ), then 
 
 $$
-|L_⊥| = sin \theta_L
+|L_{⊥N}| = sin \theta_L
 $$
 
 and 
 
 $$
-|L_{||}| = cos \theta_L
+|L_{||N}| = cos \theta_L
 $$
 
 <br> 
@@ -117,6 +124,8 @@ $$
 <br> 
 
 Just like we did with the incoming light vector $$L$$, we are going to decompose the refraction vector $$T$$ in relation to the surface normal vector $$N$$. 
+
+**Image**
 
 The parallel component of $$T$$ along $$N$$ is 
 
@@ -146,6 +155,8 @@ and
 $$T_{⊥N}$$ 
 form a right-angled triangle, we can use trignometric relationships to calculate their magnitudes. 
  
+**Image**
+
 We know that 
 
 $$
@@ -167,7 +178,11 @@ $$
 |T_{⊥N}| = sin\theta_T
 $$
 
-Now, let's return to the problem of calculating $$T_{⊥N}$$. 
+Now that we have  
+$$ |T_{⊥N}|$$
+, let's return to the problem of calculating 
+$$T_{⊥N}$$
+.
 
 Since $$T_{⊥N}$$ has the same direction as $$L_{⊥N}$$, then we can calculate $$T_⊥$$ as: 
 
@@ -250,13 +265,14 @@ T = N ( - \frac{n_L}{n_T}(N.L) - \sqrt{1-\frac{n_L^2}{n_T^2} (1-(N.L)^2)} ) + \f
 \end{equation}
 
 
-Now, if you noticed, equation 1 contains a radiacal. If thee quantity inside the radical is negative, the equation becomes invalid. 
+Now, if you noticed, equation 1 contains a radiacal. If the quantity inside the radical is negative, the equation becomes invalid. 
 
 To be more specific, equation 1 becomes invalid if 
 $$n_L > n_T$$
 . 
-This phenomena is called **Total Internal Reflection**, which means that no refraction is happening and the vector is reflecting off the surface. In this case, the equation for the reflection vector is the one used. 
+This phenomena is called **Total Internal Reflection**, which means that no refraction is happening and the vector is reflecting off the surface. In this case, the equation for calculating the reflection vector is the one used. 
 
+**Image**
 
 Expressed another way, we can say that equation 1 is only valid when 
 
@@ -268,7 +284,9 @@ Why ?
 
 Well, let's prove it. 
 
-#### Proof
+<br>
+#### **Proof**
+<br>
 
 From equation 1, we can deduce that the equation becomes invalid when the quantity inside the radical becomes negative.
 
@@ -330,4 +348,8 @@ $$
 sin \theta_L \leq \frac{n_T}{n_L}
 $$
 
+This completes the proof that equation 1 is only valid when 
 
+$$
+sin \theta_L \leq \frac{n_T}{n_L}
+$$

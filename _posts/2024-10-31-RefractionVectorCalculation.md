@@ -124,7 +124,7 @@ $$
 
 However, we do not know $$T$$. Hence, we must find another way to calculate $$T_{⊥N}$$. 
 
-Before we calculate $$T_{⊥N}$$, let's first calculate the magnitude of $$T_{⊥N}$$ ; $$|T_{⊥N}|$$
+Before we calculate $$T_{⊥N}$$, let's first calculate $$|T_{⊥N}|$$
 
 Since the vectors 
 $$T$$
@@ -139,7 +139,9 @@ sin\theta_T = \frac{|T_{⊥N}|}{|T|}
 $$ 
 
 
-Hence, 
+Suppose $$T$$ is normalized (i.e., 
+$$|T| = 1$$
+. Then, 
 
 $$
 |T_{⊥N}| = sin\theta_T

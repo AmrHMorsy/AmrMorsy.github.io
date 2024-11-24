@@ -280,7 +280,10 @@ Why ?
 
 Well, let's prove it. 
 
+<br>
+<br>
 #### Proof
+<br>
 
 From equation 1, we can deduce that the equation becomes invalid when the quantity inside the radical becomes negative.
 

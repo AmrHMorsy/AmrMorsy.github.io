@@ -381,3 +381,7 @@ This completes the proof that equation 1 is only valid when
 $$
 sin \theta_L \leq \frac{n_T}{n_L}
 $$
+
+<br>
+---
+<br>

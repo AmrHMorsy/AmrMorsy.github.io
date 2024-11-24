@@ -132,9 +132,9 @@ Just like we did with the incoming light vector $$L$$, we are going to decompose
 
 The parallel component of $$T$$ along $$N$$ is 
 
-$$
+\begin{equation}
 T_{||N} = (-N.T)(-N) = -N cos \theta_T
-$$
+\end{equation}
 
 As we know, we can calculate the perpendicular component of $$T$$ along $$N$$ as: 
 
@@ -183,9 +183,9 @@ Now, let's return to the problem of calculating $$T_{⊥N}$$.
 
 Since $$T_{⊥N}$$ has the same direction as $$L_{⊥N}$$, then we can calculate $$T_⊥$$ as: 
 
-$$
+\begin{equation}
 T_⊥ = \frac{L_{⊥N}}{|L_{⊥N}|} sin \theta_T = \frac{L-(N.L)N}{sin \theta_L} sin \theta_T
-$$
+\end{equation}
 
 
 <br> 
@@ -198,26 +198,27 @@ and
 $$T_{⊥N}$$
 . That is, 
 
-$$
+\begin{equation}
 T = T_{||N} + T_{⊥N}
-$$
+\end{equation}
 
-$$
+\begin{equation}
 T = (-N.T)(-N) + \frac{L-(N.L)N}{sin \theta_L} sin \theta_T
-$$
+\end{equation}
 
-$$
+\begin{equation}
 T = -N cos \theta_T + \frac{L-(N.L)N}{sin \theta_L} sin \theta_T
-$$
+\end{equation}
 
 
-Let's do some further simplification to the equation. 
+Let's do some further simplification to the equation.
+
 
 We can use **Snell Law** to replace $$\frac{sin\theta_T}{sin\theta_L}$$ with $$\frac{n_L}{n_T}$$. This yields: 
 
-$$
+\begin{equation}
 T = -N cos \theta_T + \frac{n_L}{n_T}(L-(N.L)N)
-$$
+\end{equation}
 
 We can also replace 
 $$cos \theta_T$$ 
@@ -226,9 +227,9 @@ $$\sqrt{1-sin^2 \theta_T}$$
 , which gives us 
 
 
-$$
+\begin{equation}
 T = -N \sqrt{1-sin^2 \theta_T} + \frac{n_L}{n_T}(L-(N.L)N)
-$$
+\end{equation}
 
 Furthermore, we can use **Snell Law** to replace 
 $$sin^2 \theta_T$$
@@ -236,9 +237,9 @@ with
 $$ \frac{n_L^2}{n_T^2} sin^2 \theta_L$$
 . The result is
 
-$$
+\begin{equation}
 T = -N \sqrt{1-\frac{n_L^2}{n_T^2} sin^2 \theta_L} + \frac{n_L}{n_T}(L-(N.L)N)
-$$
+\end{equation}
 
 Finally, we can replace 
 $$sin^2 \theta_L$$
@@ -248,14 +249,21 @@ $$1-cos^2 \theta_L = 1 - (N.L)^2 $$
 This gives us: 
 
 
-$$
+\begin{equation}
 T = -N \sqrt{1-\frac{n_L^2}{n_T^2} (1-(N.L)^2)} + \frac{n_L}{n_T}(L-(N.L)N)
-$$
+\end{equation}
 
-$$
+\begin{equation}
 T = -N \sqrt{1-\frac{n_L^2}{n_T^2} (1-(N.L)^2)} + \frac{n_L}{n_T}L - \frac{n_L}{n_T}(N.L)N
-$$
+\end{equation}
+
+\begin{equation}
+T = N ( - \frac{n_L}{n_T}(N.L) - \sqrt{1-\frac{n_L^2}{n_T^2} (1-(N.L)^2)} ) + \frac{n_L}{n_T}L
+\end{equation}
+
+
+The equation above of calculating the refraction vector $$T$$ is only valid when 
 
 $$
-T = N ( - \frac{n_L}{n_T}(N.L) - \sqrt{1-\frac{n_L^2}{n_T^2} (1-(N.L)^2)} ) + \frac{n_L}{n_T}L
+sin \theta_L \leq \frac{n_T}{n_L}
 $$

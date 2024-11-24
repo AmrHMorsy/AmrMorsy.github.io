@@ -132,9 +132,9 @@ Just like we did with the incoming light vector $$L$$, we are going to decompose
 
 The parallel component of $$T$$ along $$N$$ is 
 
-\begin{equation}
+$$
 T_{||N} = (-N.T)(-N) = -N cos \theta_T
-\end{equation}
+$$
 
 As we know, we can calculate the perpendicular component of $$T$$ along $$N$$ as: 
 
@@ -183,9 +183,9 @@ Now, let's return to the problem of calculating $$T_{⊥N}$$.
 
 Since $$T_{⊥N}$$ has the same direction as $$L_{⊥N}$$, then we can calculate $$T_⊥$$ as: 
 
-\begin{equation}
+$$
 T_⊥ = \frac{L_{⊥N}}{|L_{⊥N}|} sin \theta_T = \frac{L-(N.L)N}{sin \theta_L} sin \theta_T
-\end{equation}
+$$
 
 
 <br> 
@@ -198,17 +198,17 @@ and
 $$T_{⊥N}$$
 . That is, 
 
-\begin{equation}
+$$
 T = T_{||N} + T_{⊥N}
-\end{equation}
+$$
 
-\begin{equation}
+$$
 T = (-N.T)(-N) + \frac{L-(N.L)N}{sin \theta_L} sin \theta_T
-\end{equation}
+$$
 
-\begin{equation}
+$$
 T = -N cos \theta_T + \frac{L-(N.L)N}{sin \theta_L} sin \theta_T
-\end{equation}
+$$
 
 
 Let's do some further simplification to the equation.
@@ -216,9 +216,9 @@ Let's do some further simplification to the equation.
 
 We can use **Snell Law** to replace $$\frac{sin\theta_T}{sin\theta_L}$$ with $$\frac{n_L}{n_T}$$. This yields: 
 
-\begin{equation}
+$$
 T = -N cos \theta_T + \frac{n_L}{n_T}(L-(N.L)N)
-\end{equation}
+$$
 
 We can also replace 
 $$cos \theta_T$$ 
@@ -227,9 +227,9 @@ $$\sqrt{1-sin^2 \theta_T}$$
 , which gives us 
 
 
-\begin{equation}
+$$
 T = -N \sqrt{1-sin^2 \theta_T} + \frac{n_L}{n_T}(L-(N.L)N)
-\end{equation}
+$$
 
 Furthermore, we can use **Snell Law** to replace 
 $$sin^2 \theta_T$$
@@ -237,9 +237,9 @@ with
 $$ \frac{n_L^2}{n_T^2} sin^2 \theta_L$$
 . The result is
 
-\begin{equation}
+$$
 T = -N \sqrt{1-\frac{n_L^2}{n_T^2} sin^2 \theta_L} + \frac{n_L}{n_T}(L-(N.L)N)
-\end{equation}
+$$
 
 Finally, we can replace 
 $$sin^2 \theta_L$$
@@ -249,22 +249,97 @@ $$1-cos^2 \theta_L = 1 - (N.L)^2 $$
 This gives us: 
 
 
-\begin{equation}
+$$
 T = -N \sqrt{1-\frac{n_L^2}{n_T^2} (1-(N.L)^2)} + \frac{n_L}{n_T}(L-(N.L)N)
-\end{equation}
+$$
 
-\begin{equation}
+$$
 T = -N \sqrt{1-\frac{n_L^2}{n_T^2} (1-(N.L)^2)} + \frac{n_L}{n_T}L - \frac{n_L}{n_T}(N.L)N
-\end{equation}
+$$
 
-\begin{equation}
+\begin{equation} 
 T = N ( - \frac{n_L}{n_T}(N.L) - \sqrt{1-\frac{n_L^2}{n_T^2} (1-(N.L)^2)} ) + \frac{n_L}{n_T}L
 \end{equation}
 
 
-The equation above of calculating the refraction vector $$T$$ is only valid when 
+Now, if you noticed, equation 1 contains a radiacal. If thee quantity inside the radical is negative, the equation becomes invalid. 
+
+To be more specific, equation 1 becomes invalid if 
+$$n_L > n_T$$
+. 
+This phenomena is called **Total Internal Reflection**, which means that no refraction is happening and the vector is reflecting off the surface. In this case, the equation for the reflection vector is the one used. 
+
+
+Expressed another way, we can say that equation 1 is only valid when 
 
 $$
 sin \theta_L \leq \frac{n_T}{n_L}
 $$
+
+Why ?
+
+Well, let's prove it. 
+
+#### Proof
+
+From equation 1, we can deduce that the equation becomes invalid when the quantity inside the radical becomes negative.
+
+Hence, equation 1 is valid only when 
+
+$$
+1-\frac{n_L^2}{n_T^2} (1-(N.L)^2) \geq 0
+$$
+
+Rearranging the equation gives us: 
+
+$$
+\frac{n_L^2}{n_T^2} (1-(N.L)^2) \leq 1
+$$
+
+We can divide both sides by 
+$$\frac{n_L^2}{n_T^2}$$
+. This yields: 
+
+
+$$
+1-(N.L)^2 \leq \frac{n_T^2}{n_L^2}
+$$
+
+Multiplying by -1 gives us: 
+
+$$
+(N.L)^2 -1 \geq - \frac{n_T^2}{n_L^2}
+$$
+
+$$
+(N.L)^2 \geq 1 - \frac{n_T^2}{n_L^2}
+$$
+
+Now, since 
+$$ N.L = cos \theta_L $$
+, then 
+
+$$
+cos^2 \theta_L \geq 1 - \frac{n_T^2}{n_L^2}
+$$
+
+We know that 
+$$cos^2 \theta_L = 1 - sin^2 \theta_L$$
+. Hence, 
+
+
+$$
+1 - sin^2 \theta_L \geq 1 - \frac{n_T^2}{n_L^2}
+$$
+
+Finally, rearranging the equation, multiplying by -1 and taking the square root in both sides gives us: 
+
+$$
+sin^2 \theta_L \leq \frac{n_T^2}{n_L^2}
+$$
+
+$$
+sin \theta_L \leq \frac{n_T}{n_L}
+$$
+
 

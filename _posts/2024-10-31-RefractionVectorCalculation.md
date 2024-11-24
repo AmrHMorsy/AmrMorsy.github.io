@@ -229,3 +229,33 @@ $$\sqrt{1-sin^2 \theta_T}$$
 $$
 T = -N \sqrt{1-sin^2 \theta_T} + \frac{n_L}{n_T}(L-(N.L)N)
 $$
+
+Furthermore, we can use **Snell Law** to replace 
+$$sin^2 \theta_T$$
+with 
+$$ \frac{n_L^2}{n_T^2} sin^2 \theta_L$$
+. The result is
+
+$$
+T = -N \sqrt{1-\frac{n_L^2}{n_T^2} sin^2 \theta_L} + \frac{n_L}{n_T}(L-(N.L)N)
+$$
+
+Finally, we can replace 
+$$sin^2 \theta_L$$
+with 
+$$1-cos^2 \theta_L = 1 - (N.L)^2 $$
+
+This gives us: 
+
+
+$$
+T = -N \sqrt{1-\frac{n_L^2}{n_T^2} (1-(N.L)^2)} + \frac{n_L}{n_T}(L-(N.L)N)
+$$
+
+$$
+T = -N \sqrt{1-\frac{n_L^2}{n_T^2} (1-(N.L)^2)} + \frac{n_L}{n_T}L - \frac{n_L}{n_T}(N.L)N
+$$
+
+$$
+T = N ( - \frac{n_L}{n_T}(N.L) - \sqrt{1-\frac{n_L^2}{n_T^2} (1-(N.L)^2)} ) + \frac{n_L}{n_T}L
+$$

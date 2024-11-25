@@ -300,9 +300,9 @@ T = N ( - \frac{n_L}{n_T}(N.L) - \sqrt{1-\frac{n_L^2}{n_T^2} (1-(N.L)^2)} ) + \f
 \end{equation}
 
 
-Now, if you noticed, equation 1 contains a radiacal. If the quantity inside the radical is negative, the equation becomes invalid. 
+Now, if you noticed, equation 1 contains a radical. If the quantity inside the radical is negative, the equation becomes invalid. 
 
-To be more specific, equation 1 becomes invalid if 
+To be more specific, equation 1 can become invalid if 
 $$n_L > n_T$$
 . 
 This phenomena is called **Total Internal Reflection**, which means that no refraction is happening and the vector is reflecting off the surface. In this case, the equation for calculating the reflection vector is the one used. 

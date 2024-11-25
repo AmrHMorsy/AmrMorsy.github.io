@@ -28,7 +28,7 @@ In this post, we will explore the mathematics behind calculating the refraction 
 ### **Snell Law** <br>
 <br> 
 
-Transparent surfaces has a property called the **index of refraction**. This refractive index determines how much the path of light is bent or refracted, when entering a material. This can be explained by **Snell's Law**. 
+Transparent surfaces have a property called the **index of refraction**. This refractive index determines how much the path of light is bent or refracted, when entering a material. This can be explained by **Snell's Law**. 
 
 Let:
 

@@ -396,3 +396,11 @@ sin \theta_L \leq \frac{n_T}{n_L}
 $$
 
 ***
+
+<br>
+### References 
+
+- Chapter 6.4.2 - Mathematics for 3D Programming and Computer Graphics by Eric Lengyel
+
+<br>
+***

@@ -188,6 +188,6 @@ glm::vec3 compute_reflection_vector( glm::vec3 L, glm::vec3 N )
 ### References 
 
 - Chapter 6.4.1 - Mathematics for 3D Programming and Computer Graphics by Eric Lengyel
-
 <br>
-***
+
+*** 

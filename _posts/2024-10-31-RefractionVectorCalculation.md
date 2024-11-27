@@ -401,6 +401,6 @@ $$
 ### References 
 
 - Chapter 6.4.2 - Mathematics for 3D Programming and Computer Graphics by Eric Lengyel
-
 <br>
+
 ***

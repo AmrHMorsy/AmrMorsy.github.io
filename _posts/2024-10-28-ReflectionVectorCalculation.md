@@ -8,8 +8,9 @@ categories:
 featured: false
 ---
 
-
+<br>
 ### **Introduction** <br>
+<br>
 
 When a beam of light hits the surface of an object, part of its energy is absorbed by the surface, part of its energy is reflected away and part of its energy may refract through the object itself. 
 
@@ -34,6 +35,7 @@ We assume $$N$$, $$L$$ and $$R$$ are normalized to unit length.
 
 <br>
 ### **Law of Reflection** <br>
+<br>
 
 The law of reflection states that the angle of incidence is equal to the angle of reflection. That is, 
 
@@ -51,6 +53,7 @@ $$
 
 <br>
 ### **Decomposition of Vector $$L$$** <br>
+<br>
 
 To calculate the reflection vector $$R$$, we first need to decompose the incoming light vector $$L$$ in relation to the surface normal vector $$N$$. 
 
@@ -65,7 +68,6 @@ $$L_{⊥N}$$
 $$
 L = L_{||N} + L_{⊥N}
 $$
-. 
 
 The parallel component of $$L$$ along $$N$$ is: 
 
@@ -104,7 +106,7 @@ $$R_{⊥N}$$
 $$
 R = R_{||N} + R_{⊥N}
 $$
-. 
+ 
 
 
 <br>
@@ -117,6 +119,7 @@ $$
 
 <br>
 ### **Calculating the Reflection Vector $$R$$** <br>
+<br>
 
 Now, let's calculate the reflection vector $$R$$. Since 
 $$
@@ -168,6 +171,7 @@ $$
 
 <br>
 ### Implementation <br>
+<br>
 
 Here’s the C++ code using the GLM library:
 

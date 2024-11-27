@@ -15,7 +15,13 @@ When a beam of light hits the surface of an object, part of its energy is absorb
 
 In this post, we will explore the mathematics behind calculating the reflection vector. 
 
-**image**
+<br>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html loading="eager" path="assets/img/Refraction0.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<br>
 
 Let: 
 - $$L$$ be the incoming light vector
@@ -35,7 +41,13 @@ $$
 \theta_i = \theta_r
 $$
 
-**image**
+<br>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html loading="eager" path="assets/img/Reflection0.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<br>
 
 <br>
 ### **Decomposition of Vector $$L$$** <br>
@@ -71,7 +83,13 @@ $$
 L_{⊥N} = L - L_{||N} = L - (L.N)N
 $$
 
-**Image** 
+<br>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html loading="eager" path="assets/img/Reflection1.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<br>
 
 Just like we did with the incoming light vector $$L$$, we are going to decompose the reflection vector $$R$$ in relation to the surface normal vector $$N$$.
 
@@ -89,7 +107,13 @@ $$
 . 
 
 
-**image**
+<br>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html loading="eager" path="assets/img/Reflection2.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<br>
 
 <br>
 ### **Calculating the Reflection Vector $$R$$** <br>
@@ -153,3 +177,13 @@ glm::vec3 compute_reflection_vector( glm::vec3 L, glm::vec3 N )
     return L - 2.0f * glm::dot( L, N ) * N ;
 }
 ```
+
+***
+
+<br>
+### References 
+
+- Mathematics for 3D Programming and Computer Graphics by Eric Lengyel
+
+<br>
+***

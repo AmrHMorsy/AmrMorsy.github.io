@@ -15,5 +15,3 @@ latest_posts: false  # includes a list of the newest posts
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-
-A graphics programmer with 5 year of experience. My expertise includes developing game engines, simulations, animations, and video games, with proficiency in parallel and multicore programming for optimizing large-scale projects.

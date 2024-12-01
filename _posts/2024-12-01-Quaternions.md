@@ -12,12 +12,13 @@ featured: false
 ### **Introduction** <br>
 <br> 
 
-In computer graphics, rotations are typically represented using matrices. A rotation of angle $$\theta$$ around the axis has the following matrix: 
+In computer graphics, rotations are commonly represented using matrices. For example, a rotation by an angle $$\theta$$ around the axis $$A$$ is expressed using the following matrix: 
 
-You can rotate any vertex by simply multiplying it with the rotation matrix. 
+Applying this rotation to a vertex is as simple as multiplying the vertex by the matrix.
 
-However, matrices are not the only way to represent rotations. There is another alternative method. They are called Quaternions. 
+However, matrices are not the only way to represent rotations. There is a better alternative: **Quaternions**.
 
-In this post, we will explore the topic of quaternions and everything about it 
+In this post, we’ll dive deep into quaternions.
 
+We will explore their mathematical foundations, their use in representing rotations, and how they can be more easily interpolated to produce smooth animations.
 

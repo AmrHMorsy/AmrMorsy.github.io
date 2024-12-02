@@ -15,8 +15,11 @@ featured: false
 In computer graphics, rotations are commonly represented using matrices. For example, a rotation by an angle $$\theta$$ around the axis $$A$$ is expressed using the following matrix
 
 \begin{bmatrix}
-a & b & c \cr
-d & e & f \cr
+a & b & c 
+\begin{bmatrix}
+d & e & f
+\end{bmatrix}
+\begin{bmatrix}
 0 & 0 & 1
 \end{bmatrix}
 

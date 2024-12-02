@@ -14,11 +14,11 @@ featured: false
 
 In computer graphics, rotations are commonly represented using matrices. For example, a rotation by an angle $$\theta$$ around the axis $$A$$ is expressed using the following matrix: 
 
-\begin{bmatrix}
-\cos\theta+(1-\cos\theta)A_x^2 & (1-\cos\theta)A_x A_y - \sin\theta A_z & (1−\cos\theta)A_x A_z + \sin\theta A_y //
+\begin{matrix}
+\cos\theta+(1-\cos\theta)A_x^2 & (1-\cos\theta)A_x A_y - \sin\theta A_z & (1−\cos\theta)A_x A_z + \sin\theta A_y \\
 \sin\theta & \cos\theta & 0\\
 0 & 0 & 1
-\end{bmatrix}
+\end{matrix}
 
 Applying this rotation to a vertex is as simple as multiplying the vertex by the matrix.
 

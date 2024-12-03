@@ -1,6 +1,6 @@
 ---
 layout: post
-title: New Project: Procedural Terrain Generation
+title: New Project - Procedural Terrain Generation
 date: 2024-12-03 16:11:00-0400
 inline: false
 related_posts: false

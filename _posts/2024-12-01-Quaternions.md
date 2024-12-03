@@ -21,10 +21,6 @@ In computer graphics, rotations are commonly represented using matrices. For exa
 (1 - \cos \theta)A_x A_z - \sin \theta A_y & (1 - \cos \theta) A_y A_z + \sin \theta A_x & \cos \theta + ( 1 - \cos \theta ) A_z^2
 \end{bmatrix}
 
-Applying this rotation to a vertex is as simple as multiplying the vertex by the matrix.
+We can apply this rotation to a vertex by simply multiplying the vertex by the matrix. However, matrices are not the only way to represent rotations. There is a better alternative: **Quaternions**.
 
-However, matrices are not the only way to represent rotations. There is a better alternative: **Quaternions**.
-
-In this post, we’ll dive deep into quaternions.
-
-We will explore their mathematical foundations, their use in representing rotations, and how they can be more easily interpolated to produce smooth animations.
+In this post, we’ll dive deep into quaternions. We will explore their mathematical foundations, their use in representing rotations, and how they can be more easily interpolated to produce smooth animations.

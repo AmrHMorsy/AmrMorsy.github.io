@@ -12,7 +12,7 @@ featured: false
 ### **Introduction** <br>
 <br> 
 
-In computer graphics, rotations are commonly represented using matrices. For example, a rotation by an angle $$\theta$$ around the axis $$A$$ is expressed using the following matrix
+In computer graphics, rotations are commonly represented using matrices. For example, a rotation by an angle $$\theta$$ around the axis $$A$$ is expressed using the following matrix: 
 
 
 \begin{bmatrix}
@@ -21,6 +21,15 @@ In computer graphics, rotations are commonly represented using matrices. For exa
 (1 - \cos \theta)A_x A_z - \sin \theta A_y & (1 - \cos \theta) A_y A_z + \sin \theta A_x & \cos \theta + ( 1 - \cos \theta ) A_z^2
 \end{bmatrix}
 
-We can apply this rotation to a vertex by simply multiplying the vertex by the matrix. However, matrices are not the only way to represent rotations. There is a better alternative: **Quaternions**.
+We can apply this rotation to a vertex by multiplying the vertex coordinates by the matrix. However, matrices are not the only mathematical entity to represent rotations. There is a better alternative: **Quaternions**.
 
-In this post, we’ll dive deep into quaternions. We will explore their mathematical foundations, their use in representing rotations, and how they can be more easily interpolated to produce smooth animations.
+Quaternions provide several advantages over other representations like rotation matrices: 
+
+- Compact Storage: Quaternions require only four components compared to nine for a 3x3 rotation matrix.
+  
+- Smooth Interpolation: Quaternions offers smooth interpolation (e.g., SLERP) making them ideal for animations and transitions.
+  
+- Efficient Concatenation: Combining multiple rotations with quaternions involves fewer arithmetic operations compared to matrices.
+
+
+In this post, we will dive into the topic of quaternions. We will explore their mathematical foundations, their use in representing rotations, and how they can be more easily interpolated to produce smooth animations.

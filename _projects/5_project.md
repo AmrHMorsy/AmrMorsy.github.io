@@ -4,7 +4,7 @@ title: Ray Tracing Engine
 description: Advanced Raytracer application, developed in C++, that utilizes OpenMP for parallel computing to enhance performance. The project features global illumination, motion blur, depth of field, soft shadows and Phong Local Illumination
 img: assets/img/A.png
 redirect: https://github.com/AmrHMorsy/Raytracer
-importance: 5
+importance: 6
 category:
 ---
 

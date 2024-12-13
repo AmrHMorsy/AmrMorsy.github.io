@@ -3,7 +3,7 @@ layout: page
 title: Procedural Terrain Generation
 description: Real-time Procedural Terrain Generation, developed in C++/OpenGL, that uses Fractal Brownian Motion and Perlin Noise. Features Physically-Based Rendering (PBR), image-based lighting (IBL) for enhanced realism, an HDR skybox for a dynamic, immersive sky, and volumetric fog rendering for added depth and atmospheric effects.
 img: assets/img/ptg.png
-redirect: https://github.com/AmrHMorsy/Skeletal-Animation-OpenGL
+redirect: https://github.com/AmrHMorsy/Procedural-Terrain-Generation
 importance: 3
 category:
 ---

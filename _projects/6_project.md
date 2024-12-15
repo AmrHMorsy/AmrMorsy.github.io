@@ -8,7 +8,7 @@ category:
 ---
 
 ***
-
+<span style="color:red;">This text is red</span>
 [**Project Github Link**](https://github.com/AmrHMorsy/Procedural-Terrain-Generation-OpenGL)
 
 ***

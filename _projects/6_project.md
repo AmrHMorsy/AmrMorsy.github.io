@@ -13,9 +13,15 @@ category:
 
 Real-time Procedural Multifractal Terrain Generation developed in C++ and OpenGL, capable of generating infinite terrains using multifractal models based on **Fractal Brownian Motion** and **Perlin Noise**. It incorporates Physically-Based Rendering (PBR), image-based lighting (IBL), an HDR skybox, and volumetric fog rendering. 
 
-![ptg](https://github.com/user-attachments/assets/896d0e9d-c9c0-49fc-9d1a-debc28df5517)
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html loading="eager" path="assets/img/ptg.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 ## Features
+
+<br>
 
 ### Noise
 
@@ -23,7 +29,11 @@ The base noise function used is perlin noise. This function is used within a dom
 
 Nature, however, is far more complex and irregular. Real landscapes are quite heterogeneous, which is why multifractal terrain models are used. These models approximate certain erosion features, without overly compromising the elegance and computational efficiency of the original fBm model. They generate terrains where low-lying areas tend to accumulate silt and become topographically smoother, while higher regions remain jagged due to ongoing erosive processes.
 
-![ptg2](https://github.com/user-attachments/assets/dfa97049-2cb8-4eed-824f-4a0d688f7844)
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html loading="eager" path="assets/img/ptg2.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 ### Shading 
 
@@ -48,19 +58,31 @@ Roughness is a measure of how smooth the surface of the terrain is and is essent
 
 Ambient occlusion quantifies how much ambient light is blocked at a given point on the terrain. It is approxmiated using the second derivative of the height function, which represents the terrain's curvature or slope variation, and is essential for computing Image-Based Lighting (IBL) functions. The derivative is analytically precomputed within the noise function and stored in a texture for efficient real-time sampling during rendering.
 
-![ptg3](https://github.com/user-attachments/assets/3731540d-3d6f-49da-a9d0-921337869346)
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html loading="eager" path="assets/img/ptg3.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 ### Volumetric Fog
 
 This technique simulates fog by estimating the density of the fog particles in the regions of space visibile to the camera and then uses raymarching to calculate the amount of light that reaches the camera after the physical interaction of the fog particles with the incoming light. Noise-based functions were used to estimate the fog color, the fog density, the scattering coefficient and the asymmetry parameter (g) of the Henyey-Greenstein phase function, which is a mathematical model used to describe the scattering of light in mediums such as fog, clouds and water. 
 
-![ptg8](https://github.com/user-attachments/assets/73bf7d11-16af-45f6-93e9-4ec527d3664d)
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html loading="eager" path="assets/img/ptg8.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 ### Infinite Terrains
 
 As the camera moves in any of the XZ directions, more unique terrains are generated, giving the illusion of infinite terrains. It works by translating terrain patches that are behind the camera to the front and recalculating the noise to generate new unique height maps. This trick simulates infinite terrains, but keeps the total number of terrain patches constant. 
 
-![ptg7](https://github.com/user-attachments/assets/9387499d-d74f-4834-a874-94beec913997)
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html loading="eager" path="assets/img/ptg7.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 ## Optimizations 
 
@@ -68,13 +90,21 @@ As the camera moves in any of the XZ directions, more unique terrains are genera
 
 Frustum culling is used to optimize performance by rendering only the terrain patches that are inside the view frustum of the camera. The terrain patches that are outside the camera's field of view are not rendered, reducing processing load and saving the computation that would have been otherwise wasted in noise computation and terrain shading; thus improving the FPS. 
 
-![ptg4](https://github.com/user-attachments/assets/0ac1c019-bf1c-4fa2-a3e0-764d5d48da79)
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html loading="eager" path="assets/img/ptg4.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 ### Baking Data
 
 Computing noise-based height, ambient occlusion, normal, roughness and albedo every frame would be inefficient, since these data do not change from frame to frame and do not depend on external dynamic parameters such as camera position. Therefore, these data can be precomputed or baked into textures only once during the program initialization, and then are sampled from in real-time during rendering. This optimization alone significantly improved the FPS. 
 
-![ptg9](https://github.com/user-attachments/assets/213734cf-4ba6-46bb-9050-739836ec0b53)
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html loading="eager" path="assets/img/ptg9.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 ## License
 
@@ -119,3 +149,7 @@ make
 - Ebert, D. S., Musgrave, F. K., Peachey, D., Perlin, K., & Worley, S. (2003). *Texturing and Modeling: A Procedural Approach (3rd ed.)*. Chapter 14: A Brief Introduction to Fractals. Morgan Kaufmann Publishers.
   
 - Ebert, D. S., Musgrave, F. K., Peachey, D., Perlin, K., & Worley, S. (2003). *Texturing and Modeling: A Procedural Approach (3rd ed.)*. Chapter 16: Procedural Fractals Terrains. Morgan Kaufmann Publishers.
+
+
+
+**Link to Github Repo** https://github.com/AmrHMorsy/Procedural-Terrain-Generation-OpenGL

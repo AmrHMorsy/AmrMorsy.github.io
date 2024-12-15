@@ -9,7 +9,7 @@ category:
 
 **Link to Github Repo** https://github.com/AmrHMorsy/Procedural-Terrain-Generation-OpenGL
 
-# Procedural-Terrain-Generation-OpenGL
+# Procedural Terrain-Generation
 
 Real-time Procedural Multifractal Terrain Generation developed in C++ and OpenGL, capable of generating infinite terrains using multifractal models based on **Fractal Brownian Motion** and **Perlin Noise**. It incorporates Physically-Based Rendering (PBR), image-based lighting (IBL), an HDR skybox, and volumetric fog rendering. 
 

@@ -147,6 +147,8 @@ Computing noise-based height, ambient occlusion, normal, roughness and albedo ev
 
 - Scratchpixel. [Perlin Noise](https://www.scratchapixel.com/lessons/procedural-generation-virtual-worlds/perlin-noise-part-2/perlin-noise.html)
 
+- Perlin, K. (2002). Improving Noise.
+
 *** 
 
 <br>

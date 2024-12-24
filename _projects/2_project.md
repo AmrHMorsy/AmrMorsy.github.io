@@ -3,18 +3,31 @@ layout: page
 title: Cloth Simulation
 description: Real-time cloth simulation, developed in C++/OpenGL, that employs a Mass-Spring System, inspired by the paper "Fast Simulation of Mass-Spring Systems" by Liu et al. Parallelized using OpenMP and features Physically-Based Rendering (PBR), image-based lighting (IBL) for enhanced realism, and an HDR skybox for a dynamic, immersive sky.
 img: assets/img/3.png
-redirect: https://github.com/AmrHMorsy/Cloth-Simulation
 importance: 2
 category:
 giscus_comments: true
 ---
 
-# **Cloth Simulation**
 
+***
+
+<span style="color:red; font-size:16px;"><a href="https://github.com/AmrHMorsy/cloth-Simulation-OpenGL"><b>Project Github Link</b></a></span>
+
+***
+
+<br>
+
+# **Cloth Simulation**
 
 Developed in C++ and OpenGL, this real-time simulation employs a Mass-Spring System approach for realistic cloth dynamics, inspired by the paper ["Fast Simulation of Mass-Spring Systems"](http://graphics.berkeley.edu/papers/Liu-FSM-2013-11/Liu-FSM-2013-11.pdf) by Liu et al. Alongside this, the project leverages OpenMP and OpenCL for efficient parallelization and integrates advanced rendering techniques such as Physically-Based Rendering (PBR) and Image-Based Lighting (IBL) to enhance the visual realism of the simulated cloth, and an HDR skybox for a dynamic, immersive sky.
 
-![1](https://github.com/AmrHMorsy/Cloth-Simulation/assets/56271967/28ee649f-03b8-41ee-8dcc-71ffaa67ed90)
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html loading="eager" path="assets/img/cloth/1.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+<br>
 
 ## **Features**
 

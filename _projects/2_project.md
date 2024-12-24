@@ -56,3 +56,12 @@ Developed in C++ and OpenGL, this real-time simulation employs a Mass-Spring Sys
 - An HDR Skybox is used for a dynamic and immersive sky.
 - Atmospheric fog effects are implemented, adding depth and a captivating ambiance to the scene.
 - Real-time lighting effects, including adjustable light positions and intensities, enhance the realism of the cloth simulation.
+
+<br>
+
+
+<br>
+
+*** 
+
+<br>

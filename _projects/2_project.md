@@ -5,7 +5,6 @@ description: Real-time cloth simulation, developed in C++/OpenGL, that employs a
 img: assets/img/3.png
 importance: 2
 category:
-giscus_comments: true
 ---
 
 
@@ -23,7 +22,7 @@ Developed in C++ and OpenGL, this real-time simulation employs a Mass-Spring Sys
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html loading="eager" path="assets/img/cloth/1.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html loading="eager" path="assets/img/3.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
